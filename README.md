@@ -63,9 +63,11 @@ helics run --path /bin/config.json --broker-loglevel=6
 
 For mac users, we can define the bash scripts to define the environment variables (e.g. eagle.sh). The 'constants.py' file takes the environment variable if defined. 
 
+```
 cd <path to Co-simulation folder>\Co-Simulation
 source eagle.sh
 python bin/make_config_file.py localhost
 helics run --path /bin/config.json --broker-loglevel=6
+```
 
 Note: Currently Windows users may experience a minor issue that the DOOM power set points for only 1 out of 10 loads would be passed to the OpenDSS model.
