@@ -1,0 +1,2 @@
+New PVSystem.pv_load_p2ulv10358 bus1=p2ulv10358.1.2 phases=2 kV=0.2080002494301389 kVA=5.5 Pmpp=5.0 %Cutout=0.1 %Cutin=0.1 Model=1 pf=1.0 irradiance=1 !yearly=SFO_37.774101_-122.500000_25_135
+New PVSystem.pv_load_p2ulv10372 bus1=p2ulv10371.1.2 phases=2 kV=0.2080002494301389 kVA=5.5 Pmpp=5.0 %Cutout=0.1 %Cutin=0.1 Model=1 pf=1.0 irradiance=1 !yearly=SFO_37.774101_-122.500000_35_180

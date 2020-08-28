@@ -1,0 +1,14 @@
+
+Redirect Master.dss
+
+New Monitor.Load1 element=load.S1a terminal=1 mode=1 ppolar=no
+
+
+Set mode=yearly stepsize=60m number=24
+
+solve
+
+export monitor Load1 
+
+!plot profile phases=all
+

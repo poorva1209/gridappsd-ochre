@@ -1,0 +1,82 @@
+New Load.load_1_p2ulv10359 conn=wye bus1=p2ulv10359.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=1.16001 kvar=0.23003025359517673 Phases=2 !yearly=residential_12213_res__SingleFamilyDetached_pu
+
+New Load.load_1_p2ulv34367 conn=wye bus1=p2ulv34367.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=2.68003 kvar=0.5399819708887028 Phases=2 !yearly=commercial_17_com__MidriseApartment_pu
+
+New Load.load_1_p2ulv10358 conn=wye bus1=p2ulv10358.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=1.49001 kvar=0.3002125112196043 Phases=2 !yearly=residential_1094_res__SingleFamilyDetached_pu
+
+New Load.load_1_p2ulv10350 conn=wye bus1=p2ulv10349.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=1.81002 kvar=0.37037185450398985 Phases=2 !yearly=residential_13340_res__SingleFamilyDetached_pu
+
+New Load.load_1_p2ulv10349 conn=wye bus1=p2ulv10349.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=14.250100000000002 kvar=2.8936062199006245 Phases=2 !yearly=commercial_17_com__MidriseApartment_pu
+
+New Load.load_1_p2ulv10372 conn=wye bus1=p2ulv10371.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=1.60002 kvar=0.3298873823171717 Phases=2 !yearly=residential_14553_res__SingleFamilyDetached_pu
+
+New Load.load_1_p2ulv10371 conn=wye bus1=p2ulv10371.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=2.07002 kvar=0.4203354886856016 Phases=2 !yearly=residential_4696_res__SingleFamilyDetached_pu
+
+New Load.load_1_p2ulv10370 conn=wye bus1=p2ulv10370.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=3.70004 kvar=0.7493869570665965 Phases=2 !yearly=commercial_17_com__MidriseApartment_pu
+
+New Load.load_1_p2ulv10369 conn=wye bus1=p2ulv10369.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=5.48005 kvar=1.109900972441596 Phases=2 !yearly=commercial_17_com__MidriseApartment_pu
+
+New Load.load_1_p2ulv4847 conn=wye bus1=p2ulv4847.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=1.19001 kvar=0.23976744483355233 Phases=2 !yearly=commercial_17_com__MidriseApartment_pu
+
+
+New Load.load_2_p2ulv10359 conn=wye bus1=p2ulv10359.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=1.16001 kvar=0.23003025359517673 Phases=2 !yearly=residential_12213_res__SingleFamilyDetached_pu
+
+New Load.load_2_p2ulv34367 conn=wye bus1=p2ulv34367.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=2.68003 kvar=0.5399819708887028 Phases=2 !yearly=commercial_17_com__MidriseApartment_pu
+
+New Load.load_2_p2ulv10358 conn=wye bus1=p2ulv10358.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=1.49001 kvar=0.3002125112196043 Phases=2 !yearly=residential_1094_res__SingleFamilyDetached_pu
+
+New Load.load_2_p2ulv10350 conn=wye bus1=p2ulv10349.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=1.81002 kvar=0.37037185450398985 Phases=2 !yearly=residential_13340_res__SingleFamilyDetached_pu
+
+New Load.load_2_p2ulv10349 conn=wye bus1=p2ulv10349.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=14.250100000000002 kvar=2.8936062199006245 Phases=2 !yearly=commercial_17_com__MidriseApartment_pu
+
+New Load.load_2_p2ulv10372 conn=wye bus1=p2ulv10371.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=1.60002 kvar=0.3298873823171717 Phases=2 !yearly=residential_14553_res__SingleFamilyDetached_pu
+
+New Load.load_2_p2ulv10371 conn=wye bus1=p2ulv10371.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=2.07002 kvar=0.4203354886856016 Phases=2 !yearly=residential_4696_res__SingleFamilyDetached_pu
+
+New Load.load_2_p2ulv10370 conn=wye bus1=p2ulv10370.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=3.70004 kvar=0.7493869570665965 Phases=2 !yearly=commercial_17_com__MidriseApartment_pu
+
+New Load.load_2_p2ulv10369 conn=wye bus1=p2ulv10369.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=5.48005 kvar=1.109900972441596 Phases=2 !yearly=commercial_17_com__MidriseApartment_pu
+
+New Load.load_2_p2ulv4847 conn=wye bus1=p2ulv4847.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=1.19001 kvar=0.23976744483355233 Phases=2 !yearly=commercial_17_com__MidriseApartment_pu
+
+
+New Load.load_3_p2ulv10359 conn=wye bus1=p2ulv10359.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=1.16001 kvar=0.23003025359517673 Phases=2 !yearly=residential_12213_res__SingleFamilyDetached_pu
+
+New Load.load_3_p2ulv34367 conn=wye bus1=p2ulv34367.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=2.68003 kvar=0.5399819708887028 Phases=2 !yearly=commercial_17_com__MidriseApartment_pu
+
+New Load.load_3_p2ulv10358 conn=wye bus1=p2ulv10358.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=1.49001 kvar=0.3002125112196043 Phases=2 !yearly=residential_1094_res__SingleFamilyDetached_pu
+
+New Load.load_3_p2ulv10350 conn=wye bus1=p2ulv10349.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=1.81002 kvar=0.37037185450398985 Phases=2 !yearly=residential_13340_res__SingleFamilyDetached_pu
+
+New Load.load_3_p2ulv10349 conn=wye bus1=p2ulv10349.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=14.250100000000002 kvar=2.8936062199006245 Phases=2 !yearly=commercial_17_com__MidriseApartment_pu
+
+New Load.load_3_p2ulv10372 conn=wye bus1=p2ulv10371.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=1.60002 kvar=0.3298873823171717 Phases=2 !yearly=residential_14553_res__SingleFamilyDetached_pu
+
+New Load.load_3_p2ulv10371 conn=wye bus1=p2ulv10371.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=2.07002 kvar=0.4203354886856016 Phases=2 !yearly=residential_4696_res__SingleFamilyDetached_pu
+
+New Load.load_3_p2ulv10370 conn=wye bus1=p2ulv10370.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=3.70004 kvar=0.7493869570665965 Phases=2 !yearly=commercial_17_com__MidriseApartment_pu
+
+New Load.load_3_p2ulv10369 conn=wye bus1=p2ulv10369.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=5.48005 kvar=1.109900972441596 Phases=2 !yearly=commercial_17_com__MidriseApartment_pu
+
+New Load.load_3_p2ulv4847 conn=wye bus1=p2ulv4847.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=1.19001 kvar=0.23976744483355233 Phases=2 !yearly=commercial_17_com__MidriseApartment_pu
+
+
+New Load.load_4_p2ulv10359 conn=wye bus1=p2ulv10359.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=1.16001 kvar=0.23003025359517673 Phases=2 !yearly=residential_12213_res__SingleFamilyDetached_pu
+
+New Load.load_4_p2ulv34367 conn=wye bus1=p2ulv34367.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=2.68003 kvar=0.5399819708887028 Phases=2 !yearly=commercial_17_com__MidriseApartment_pu
+
+New Load.load_4_p2ulv10358 conn=wye bus1=p2ulv10358.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=1.49001 kvar=0.3002125112196043 Phases=2 !yearly=residential_1094_res__SingleFamilyDetached_pu
+
+New Load.load_4_p2ulv10350 conn=wye bus1=p2ulv10349.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=1.81002 kvar=0.37037185450398985 Phases=2 !yearly=residential_13340_res__SingleFamilyDetached_pu
+
+New Load.load_4_p2ulv10349 conn=wye bus1=p2ulv10349.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=14.250100000000002 kvar=2.8936062199006245 Phases=2 !yearly=commercial_17_com__MidriseApartment_pu
+
+New Load.load_4_p2ulv10372 conn=wye bus1=p2ulv10371.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=1.60002 kvar=0.3298873823171717 Phases=2 !yearly=residential_14553_res__SingleFamilyDetached_pu
+
+New Load.load_4_p2ulv10371 conn=wye bus1=p2ulv10371.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=2.07002 kvar=0.4203354886856016 Phases=2 !yearly=residential_4696_res__SingleFamilyDetached_pu
+
+New Load.load_4_p2ulv10370 conn=wye bus1=p2ulv10370.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=3.70004 kvar=0.7493869570665965 Phases=2 !yearly=commercial_17_com__MidriseApartment_pu
+
+New Load.load_4_p2ulv10369 conn=wye bus1=p2ulv10369.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=5.48005 kvar=1.109900972441596 Phases=2 !yearly=commercial_17_com__MidriseApartment_pu
+
+New Load.load_4_p2ulv4847 conn=wye bus1=p2ulv4847.1.2 kV=0.2080002494301389 Vminpu=0.8 Vmaxpu=1.2 model=1 kW=1.19001 kvar=0.23976744483355233 Phases=2 !yearly=commercial_17_com__MidriseApartment_pu

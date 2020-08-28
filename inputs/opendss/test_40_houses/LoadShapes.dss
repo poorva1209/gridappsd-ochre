@@ -1,0 +1,8 @@
+New Loadshape.commercial_17_com__MidriseApartment_pu npts= 35135 interval=0.25 mult = (file=profiles/commercial_17_com__MidriseApartment_pu.csv)
+New Loadshape.residential_12213_res__SingleFamilyDetached_pu npts= 35135 interval=0.25 mult = (file=profiles/residential_12213_res__SingleFamilyDetached_pu.csv)
+New Loadshape.residential_1094_res__SingleFamilyDetached_pu npts= 35135 interval=0.25 mult = (file=profiles/residential_1094_res__SingleFamilyDetached_pu.csv)
+New Loadshape.residential_13340_res__SingleFamilyDetached_pu npts= 35135 interval=0.25 mult = (file=profiles/residential_13340_res__SingleFamilyDetached_pu.csv)
+New Loadshape.residential_14553_res__SingleFamilyDetached_pu npts= 35135 interval=0.25 mult = (file=profiles/residential_14553_res__SingleFamilyDetached_pu.csv)
+New Loadshape.residential_4696_res__SingleFamilyDetached_pu npts= 35135 interval=0.25 mult = (file=profiles/residential_4696_res__SingleFamilyDetached_pu.csv)
+New Loadshape.SFO_37.774101_-122.500000_25_135 npts= 527039 interval=15.0 mult = (file=profiles/SFO_37.774101_-122.500000_25_135.csv)
+New Loadshape.SFO_37.774101_-122.500000_35_180 npts= 527039 interval=15.0 mult = (file=profiles/SFO_37.774101_-122.500000_35_180.csv)

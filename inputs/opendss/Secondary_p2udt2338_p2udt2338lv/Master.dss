@@ -1,0 +1,20 @@
+Clear
+
+New Circuit.feeder_p2udt5108-p2uhs13_1247x_secondary bus1=p2udt2338 pu=1.0 basekV=12.47 R1=1e-05 X1=1e-05 R0=1e-05 X0=1e-05
+
+Redirect LineCodes.dss
+Redirect Lines.dss
+Redirect Transformers.dss
+!Redirect LoadShapes.dss
+Redirect Loads.dss
+!Redirect PVSystems.dss
+
+Set Voltagebases=[0.208, 7.2, 12.47]
+
+Calcvoltagebases
+
+Buscoords Buscoords.dss
+
+New EnergyMeter.m1 Transformer.tr(r:p2udt2338-p2udt2338lv)
+
+Solve

@@ -1,0 +1,23 @@
+name: fastderms
+dependencies:
+ - python=3.7
+ - boost
+ - zeromq
+ - cmake
+ - xlrd
+ - lxml
+ - git
+ - pandas
+ - numpy
+ - helics=2.0.0
+ - pip
+ - pip:
+    - OpenDSSDirect.py[extras]
+    - subprocess32
+    - --editable=git+https://github.nrel.gov/SETO-foresee/OpenDSS-wrapper.git#egg=feeder
+    - --editable=git+https://github.nrel.gov/Customer-Modeling/Dwelling_Object_Oriented_Model__DOOM.git@develop#egg=dwelling_model
+    - --editable=git+https://github.com/GMLC-TDC/helics-cli.git@python-master#egg=helics-runner
+
+channels:
+  - defaults
+  - gmlc-tdc

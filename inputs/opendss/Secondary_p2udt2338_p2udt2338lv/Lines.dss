@@ -1,0 +1,23 @@
+New Line.l(r:p2udm8260-p2ulv10358) Units=km Length=0.0108303 bus1=p2udm8260.1.2 bus2=p2ulv10358.1.2 switch=n enabled=y phases=2 Linecode=1P_UG_AL_1/0_Brenau_0_416_0_2_2_2_2
+
+New Line.l(r:p2udm8258-p2udm8260) Units=km Length=0.00983893 bus1=p2udm8260.1.2 bus2=p2udm8258.1.2 switch=n enabled=y phases=2 Linecode=1P_UG_AL_1/0_Brenau_0_416_0_2_2_2_2
+
+New Line.l(r:p2udm8260-p2ulv10369) Units=km Length=0.0107743 bus1=p2udm8260.1.2 bus2=p2ulv10369.1.2 switch=n enabled=y phases=2 Linecode=1P_UG_AL_1/0_Brenau_0_416_0_2_2_2_2
+
+New Line.l(r:p2udm8259-p2ulv10349) Units=km Length=0.0125376 bus1=p2udm8259.1.2 bus2=p2ulv10349.1.2 switch=n enabled=y phases=2 Linecode=1P_UG_AL_4/0_Sweetbriar_0_416_0_2_2_2_2
+
+New Line.l(r:p2udm8259-p2udm8264) Units=km Length=0.00983955 bus1=p2udm8264.1.2 bus2=p2udm8259.1.2 switch=n enabled=y phases=2 Linecode=1P_UG_AL_4/0_Sweetbriar_0_416_0_2_2_2_2
+
+New Line.l(r:p2udm8264-p2ulv10371) Units=km Length=0.0110749 bus1=p2udm8264.1.2 bus2=p2ulv10371.1.2 switch=n enabled=y phases=2 Linecode=1P_UG_AL_1/0_Brenau_0_416_0_2_2_2_2
+
+New Line.l(r:p2udm8258-p2ulv4847) Units=km Length=0.0385002 bus1=p2udm8258.1.2 bus2=p2ulv4847.1.2 switch=n enabled=y phases=2 Linecode=1P_UG_AL_1/0_Brenau_0_416_0_2_2_2_2
+
+New Line.l(r:p2udm8264-p2udt2338lv) Units=km Length=0.00983893 bus1=p2udt2338lv.1.2 bus2=p2udm8264.1.2 switch=n enabled=y phases=2 Linecode=1P_UG_AL_4/0_Sweetbriar_0_416_0_2_2_2_2
+
+New Line.l(r:p2udm8260-p2udt2338lv) Units=km Length=0.00983955 bus1=p2udt2338lv.1.2 bus2=p2udm8260.1.2 switch=n enabled=y phases=2 Linecode=1P_UG_AL_1/0_Brenau_0_416_0_2_2_2_2
+
+New Line.l(r:p2udt2338lv-p2ulv10359) Units=km Length=0.0106762 bus1=p2udt2338lv.1.2 bus2=p2ulv10359.1.2 switch=n enabled=y phases=2 Linecode=1P_UG_AL_1/0_Brenau_0_416_0_2_2_2_2
+
+New Line.l(r:p2udt2338lv-p2ulv10370) Units=km Length=0.0124977 bus1=p2udt2338lv.1.2 bus2=p2ulv10370.1.2 switch=n enabled=y phases=2 Linecode=1P_UG_AL_1/0_Brenau_0_416_0_2_2_2_2
+
+New Line.l(r:p2udt2338lv-p2ulv34367) Units=km Length=0.0351025 bus1=p2udt2338lv.1.2 bus2=p2ulv34367.1.2 switch=n enabled=y phases=2 Linecode=1P_UG_AL_1/0_Brenau_0_416_0_2_2_2_2
