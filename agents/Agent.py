@@ -3,6 +3,7 @@ import helics as h
 import json
 import time
 from pandas import json_normalize
+import cffi
 
 from constants import *
 
@@ -15,13 +16,15 @@ def make_helics_federate(name, broker_addr=None, fed_type='value', **kwargs):
         s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         s.connect(("8.8.8.8", 80))
         ipaddr = s.getsockname()[0]
-        fedinitstring = "--federates=1 --broker_address=tcp://{} --interface=tcp://{}".format(broker_addr, ipaddr)
+        fedinitstring = "--federates=1 --broker_address=tcp://{} --interface=tcp://{}".format(
+            broker_addr, ipaddr)
 
     fedinfo = h.helicsCreateFederateInfo()
     h.helicsFederateInfoSetCoreName(fedinfo, name)
     h.helicsFederateInfoSetCoreTypeFromString(fedinfo, "zmq")
     h.helicsFederateInfoSetCoreInitString(fedinfo, fedinitstring)
-    h.helicsFederateInfoSetTimeProperty(fedinfo, h.helics_property_time_delta, time_step.total_seconds())
+    h.helicsFederateInfoSetTimeProperty(
+        fedinfo, h.helics_property_time_delta, time_step.total_seconds())
     if fed_type == "value":
         return h.helicsCreateValueFederate(name, fedinfo)
     elif fed_type == "message":
@@ -42,7 +45,8 @@ class Agent:
         self.setup_actions()
         self.results = {}
         self.print_log(kwargs.get('result_path'))
-        self.result_path = kwargs.get('result_path', os.path.join(output_path, self.name))
+        self.result_path = kwargs.get(
+            'result_path', os.path.join(output_path, self.name))
         self.print_log(self.result_path)
         os.makedirs(self.result_path, exist_ok=True)
 
@@ -54,7 +58,8 @@ class Agent:
 
         # Connect to Helics
         if run_helics:
-            self.print_log('Creating Federate (Helics version: {})'.format(h.helicsGetVersion()))
+            self.print_log('Creating Federate (Helics version: {})'.format(
+                h.helicsGetVersion()))
             self.fed = make_helics_federate(name, **kwargs)
         else:
             self.fed = None
@@ -66,8 +71,10 @@ class Agent:
 
         if run_helics:
             # Finish federate initialization
-            h.helicsFederateEnterInitializingMode(self.fed)  # This isn't necessary
-            self.print_log('Federate initialized. Waiting for other federates...')
+            h.helicsFederateEnterInitializingMode(
+                self.fed)  # This isn't necessary
+            self.print_log(
+                'Federate initialized. Waiting for other federates...')
             h.helicsFederateEnterExecutingMode(self.fed)
             self.print_log('Federate entering execution mode')
 
@@ -81,14 +88,16 @@ class Agent:
                   'times': []}
         self.actions.append(action)
 
-    def register_pub(self, name, topic=None, var_type="String", global_type=True, include_results=True):
+    def register_pub(self, name, topic=None, var_type=h.helics_data_type_string, global_type=True, include_results=True):
         if topic is None:
             topic = name
         if self.fed is not None:
             if global_type:
-                pub = h.helicsFederateRegisterGlobalTypePublication(self.fed, topic, var_type, "")
+                pub = h.helicsFederateRegisterGlobalTypePublication(
+                    self.fed, topic, var_type, "")
             else:
-                pub = h.helicsFederateRegisterPublication(self.fed, topic, var_type, "")
+                pub = h.helicsFederateRegisterPublication(
+                    self.fed, topic, var_type, "")
         else:
             pub = None
         if include_results and var_type == 'String':
@@ -98,7 +107,7 @@ class Agent:
 
         self.publications[name] = (pub, var_type, include_results)
 
-    def register_sub(self, name, topic=None, var_type="String", default=None):
+    def register_sub(self, name, topic=None, var_type=h.helics_data_type_string, default=None):
         if topic is None:
             topic = name
         if self.fed is not None:
@@ -114,9 +123,11 @@ class Agent:
             self.print_log('Publishing on {}:'.format(name), value)
 
         pub, var_type, has_results = self.publications[name]
-        if var_type == "String":
+        if var_type == h.helics_data_type_string:
             msg = json.dumps(value)
             h.helicsPublicationPublishString(pub, msg)
+        elif var_type == h.helics_data_type_complex:
+            h.helicsPublicationPublishComplex(pub, value.real, value.imag)
         else:
             h.helicsPublicationPublishDouble(pub, value)
 
@@ -132,10 +143,12 @@ class Agent:
             self.print_log('No new data from subscription:', name)
             return default
 
-        if var_type == "String":
+        if var_type == h.helics_data_type_string:
             data = h.helicsInputGetString(sub)
             if not isinstance(default, str):
                 data = json.loads(data)
+        elif var_type == h.helics_data_type_complex:
+            data = h.helicsInputGetComplexObject(sub)
         else:
             data = h.helicsInputGetDouble(sub)
 
@@ -157,7 +170,7 @@ class Agent:
         return
 
     def setup_pub_sub(self):
-        # Example: self.register_pub(load, topic_to_load, "String")
+        # Example: self.register_pub(load, topic_to_load, h.helics_data_type_string)
         #          self.register_sub(load, topic_from_load)
         raise NotImplementedError
 
@@ -176,7 +189,8 @@ class Agent:
             x = action['times']
             if x:
                 msg = '{} ran {} times: Avg. Time: {}, Total Time: {}, Max. Time: {}'
-                self.print_log(msg.format(action['name'], len(x), sum(x) / len(x), sum(x), max(x)))
+                self.print_log(msg.format(action['name'], len(
+                    x), sum(x) / len(x), sum(x), max(x)))
 
         if self.fed is not None:
             self.print_log('Freeing federate')
@@ -186,7 +200,8 @@ class Agent:
 
     def initialize_results(self, result_name, result_file=None):
         if result_file is None:
-            result_file = os.path.join(self.result_path, '{}_{}.csv'.format(self.name, result_name))
+            result_file = os.path.join(
+                self.result_path, '{}_{}.csv'.format(self.name, result_name))
         if os.path.exists(result_file):
             os.remove(result_file)
         self.results[result_name] = {'filename': result_file,
@@ -212,7 +227,8 @@ class Agent:
                 continue
 
             result_file = results['filename']
-            self.print_log('Saving {} results to: {}'.format(name, result_file))
+            self.print_log(
+                'Saving {} results to: {}'.format(name, result_file))
             if os.path.exists(result_file):
                 # append results
                 df.to_csv(result_file, mode='a', header=False, index=False)
@@ -248,9 +264,9 @@ class Agent:
             x = action['times']
             if x:
                 msg = '{} ran {} times: Avg. Time: {}, Total Time: {}, Max. Time: {}'
-                self.print_log(msg.format(action['name'], len(x), sum(x) / len(x), sum(x), max(x)))
+                self.print_log(msg.format(action['name'], len(
+                    x), sum(x) / len(x), sum(x), max(x)))
 
     def print_log(self, *args):
-        print('{} - {} at {}:'.format(datetime.now(), self.name, self.current_time), *args)
-
-
+        print('{} - {} at {}:'.format(datetime.now(),
+                                      self.name, self.current_time), *args)

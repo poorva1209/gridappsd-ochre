@@ -2,6 +2,7 @@ import numpy as np
 
 from constants import *
 from agents import Agent
+import helics as h
 
 from dwelling_model import Dwelling
 
@@ -99,15 +100,15 @@ class House(Agent):
         self.house = Dwelling(self.house_id, equipment, **house_args)
 
     def setup_pub_sub(self):
-        topic_to_feeder_load = "house_{}_power_to_feeder".format(self.house_id)
-        self.register_pub("power", topic_to_feeder_load, "String")
+        topic_to_feeder_load = "load_complex"
+        self.register_pub("power", topic_to_feeder_load, h.helics_data_type_complex, global_type=False)
 
-        topic_from_feeder = "feeder_vtg_to_house_{}".format(self.house_id)
-        self.register_sub("feeder", topic_from_feeder, default={})
+        topic_from_feeder = "Feeder/House_{}/voltage".format(self.house_id)
+        self.register_sub("Feeder", topic_from_feeder, var_type=h.helics_data_type_complex)
 
         if include_hems:
             topic_to_ctrlr_status = "house_status_to_ctrlr_{}".format(self.house_id)
-            self.register_pub("status", topic_to_ctrlr_status, "String")
+            self.register_pub("status", topic_to_ctrlr_status, h.helics_data_type_string)
 
             topic_from_ctrlr = "ctrlr_controls_to_house_{}".format(self.house_id)
             self.register_sub("controls", topic_from_ctrlr)
@@ -122,11 +123,12 @@ class House(Agent):
         self.add_action(self.save_results, 'Save Results', freq_save_results, offset_save_results)
 
     def get_voltage_from_feeder(self):
-        voltage = self.fetch_subscription("feeder")
-        return 1 if voltage is None else voltage.get('voltage')
+        voltage = self.fetch_subscription("Feeder")
+        print(voltage)
+        return 1 if voltage is None else abs(voltage.real ** 2 + voltage.imag ** 2) ** 0.5 / 2401.7771
 
-    def send_powers_to_feeder(self, power_to_dss):
-        self.publish_to_topic("power", power_to_dss)
+    def send_powers_to_feeder(self, power_to_feeder):
+        self.publish_to_topic("power", power_to_feeder)
 
     def send_status_to_hems(self):
         self.publish_to_topic("status", self.status)
@@ -139,15 +141,15 @@ class House(Agent):
 
         # run simulator
         if include_hems and self.hems_controls and voltage:
-            to_ext_control, to_dss = self.house.update(voltage=voltage, from_ext_control=self.hems_controls)
+            to_ext_control, to_feeder = self.house.update(voltage=voltage, from_ext_control=self.hems_controls)
         else:
             self.print_log("Did not receive house controls: {} and voltage {}".format(self.hems_controls, voltage))
             if voltage == 'None' or voltage == None: 
-                to_ext_control, to_dss = self.house.update(voltage=1)
+                to_ext_control, to_feeder = self.house.update(voltage=1)
             else:
-                to_ext_control, to_dss = self.house.update(voltage=voltage)
+                to_ext_control, to_feeder = self.house.update(voltage=voltage)
     
-        self.send_powers_to_feeder(to_dss)
+        self.send_powers_to_feeder(complex(to_feeder['P Total'], to_feeder['Q Total']))
         self.status = {}
         for k, v in to_ext_control.items():
             if isinstance(v, np.ndarray):

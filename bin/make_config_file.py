@@ -130,26 +130,29 @@ else:
     ip_addr = str(s.getsockname()[0])
     ip_addr += ":4545"
 print(ip_addr)
-# Creating the feeder fed
+# Creating the Feeder fed
 if include_feeder:
     feeder = copy(federate)
-    feeder['name'] = "feeder"
-    feeder['exec'] = "python Feeder.py {}".format(ip_addr)
+    feeder['name'] = "Feeder"
+    # feeder['exec'] = "python Feeder.py {}".format(ip_addr)
+    feeder['exec'] = "gridlabd IEEE-13_OCHRE.glm"
+    feeder['directory'] = os.path.join(base_path, 'inputs', 'gridlabd')
     config['federates'].append(feeder)
 
 # Add houses, hems, and brokers
-for i, load in enumerate(house_ids):
-    # add house and hems
-    house = copy(federate)
-    house['exec'] = "python House.py {} {}".format(load, ip_addr)
-    house['name'] = "house_{}".format(load)
-    config['federates'].append(house)
+if include_house:
+    for i, load in enumerate(house_ids):
+        # add house and hems
+        house = copy(federate)
+        house['exec'] = "python House.py {} {}".format(load, ip_addr)
+        house['name'] = "House_{}".format(load)
+        config['federates'].append(house)
 
-    if include_hems:
-        hems = copy(federate)
-        hems['exec'] = "python Hems.py {} {}".format(load, ip_addr)
-        hems['name'] = "hems_{}".format(load)
-        config['federates'].append(hems)
+        if include_hems:
+            hems = copy(federate)
+            hems['exec'] = "python Hems.py {} {}".format(load, ip_addr)
+            hems['name'] = "hems_{}".format(load)
+            config['federates'].append(hems)
 
 # Create the output directory for the scenario
 if os.path.isdir(output_path):
