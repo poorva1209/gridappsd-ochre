@@ -1,0 +1,131 @@
+{
+    "name":"Feeder",
+    "loglevel":3,
+    "coreType":"zmq",
+    "period":60.0,
+    "wait_for_current_time_update":true,
+    "publications":[
+        {
+            "global":false,
+            "key":"House_n1/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"load_1_p2ulv10359\", \"property\" : \"measured_voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n2/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"load_1_p2ulv34367\", \"property\" : \"measured_voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n3/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"load_1_p2ulv10358\", \"property\" : \"measured_voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n4/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"load_1_p2ulv10350\", \"property\" : \"measured_voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n5/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"load_1_p2ulv10349\", \"property\" : \"measured_voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n6/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"load_1_p2ulv10372\", \"property\" : \"measured_voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n7/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"load_1_p2ulv10371\", \"property\" : \"measured_voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n8/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"load_1_p2ulv10370\", \"property\" : \"measured_voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n9/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"load_1_p2ulv10369\", \"property\" : \"measured_voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n10/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"load_1_p2ulv4847\", \"property\" : \"measured_voltage_12\"}"
+        }
+    ],
+    "subscriptions":[
+        {
+            "key":"House_n1/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"load_1_p2ulv10359\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n2/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"load_1_p2ulv34367\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n3/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"load_1_p2ulv10358\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n4/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"load_1_p2ulv10350\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n5/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"load_1_p2ulv10349\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n6/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"load_1_p2ulv10372\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n7/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"load_1_p2ulv10371\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n8/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"load_1_p2ulv10370\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n9/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"load_1_p2ulv10369\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n10/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"load_1_p2ulv4847\", \"property\" : \"constant_power_12\"}"
+        }
+    ]
+}

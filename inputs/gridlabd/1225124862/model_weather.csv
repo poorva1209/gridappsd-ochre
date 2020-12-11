@@ -1,0 +1,8 @@
+#Solar Radiation Research Laboratory (39.74 N,105.18 W) file for 2013
+# data obtained from ...
+$state_name=N/A
+$city_name=N/A
+temperature,humidity,wind_speed,solar_dir,solar_diff,solar_global
+11:20:18:33:00,46.3982,0.4147,3.5075,0.0,0.0,0.0
+11:20:18:34:00,46.436,0.4138,3.2793,0.0,0.0,0.0
+11:20:18:35:00,46.526,0.4118,4.0153,0.0,0.0,0.0

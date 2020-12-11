@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet href="http://www.gridlabd.org/gridlabd-4_3.xsl" type="text/xsl"?>
+<gridlabd>
+	<version.major>4</version.major>
+	<version.minor>3</version.minor>
+	<version.patch>0</version.patch>
+	<version.build>18551</version.build>
+	<version.branch>"Navajo [c91d5848:develop]"</version.branch>
+	<command_line>"gridlabd model_startup.glm"</command_line>
+	<environment>batch</environment>
+	<quiet>FALSE</quiet>
+	<warn>TRUE</warn>
+	<debugger>FALSE</debugger>
+	<gdb>FALSE</gdb>
+	<debug>FALSE</debug>
+	<test>FALSE</test>
+	<verbose>FALSE</verbose>
+	<iteration_limit>100</iteration_limit>
+	<federation_reiteration>FALSE</federation_reiteration>
+	<workdir>/app/inputs/gridlabd/1225124862</workdir>
+	<lock>TRUE</lock>
+	<dumpfile>gridlabd.xml</dumpfile>
+	<savefile>""</savefile>
+	<dumpall>FALSE</dumpall>
+	<runchecks>FALSE</runchecks>
+	<threadcount>1</threadcount>
+	<profiler>TRUE</profiler>
+	<pauseatexit>FALSE</pauseatexit>
+	<testoutputfile>test.txt</testoutputfile>
+	<xml_encoding>8</xml_encoding>
+	<clock>2020-11-20 18:33:07 UTC</clock>
+	<starttime>2020-11-20 18:33:07 UTC</starttime>
+	<stoptime>2020-11-20 18:35:07 UTC</stoptime>
+	<double_format>%+lg</double_format>
+	<complex_format>%+lg%+lg%c</complex_format>
+	<object_format>%s:%d</object_format>
+	<object_scan>%[^:]:%d</object_scan>
+	<object_tree_balance>FALSE</object_tree_balance>
+	<kmlfile>""</kmlfile>
+	<modelname>model_startup.glm</modelname>
+	<execdir>gridlabd</execdir>
+	<strictnames>TRUE</strictnames>
+	<website>http://www.gridlabd.org/</website>
+	<urlbase>http://www.gridlabd.org/</urlbase>
+	<randomseed>1897628515</randomseed>
+	<include>""</include>
+	<trace>""</trace>
+	<gdb_window>FALSE</gdb_window>
+	<tmp>/root/.gridlabd/tmp</tmp>
+	<force_compile>0</force_compile>
+	<nolocks>FALSE</nolocks>
+	<skipsafe>FALSE</skipsafe>
+	<dateformat>ISO</dateformat>
+	<init_sequence>DEFERRED</init_sequence>
+	<minimum_timestep>0</minimum_timestep>
+	<platform>LINUX</platform>
+	<suppress_repeat_messages>TRUE</suppress_repeat_messages>
+	<maximum_synctime>3600</maximum_synctime>
+	<run_realtime>FALSE</run_realtime>
+	<enter_realtime>NEVER</enter_realtime>
+	<realtime_metric>+0</realtime_metric>
+	<no_deprecate>TRUE</no_deprecate>
+	<streaming_io>FALSE</streaming_io>
+	<compileonly>FALSE</compileonly>
+	<relax_naming_rules>TRUE</relax_naming_rules>
+	<browser>firefox</browser>
+	<server_portnum>0</server_portnum>
+	<server_quit_on_close>FALSE</server_quit_on_close>
+	<client_allowed>""</client_allowed>
+	<autoclean>TRUE</autoclean>
+	<technology_readiness_level>UNKNOWN</technology_readiness_level>
+	<show_progress>TRUE</show_progress>
+	<checkpoint_type>NONE</checkpoint_type>
+	<checkpoint_file>""</checkpoint_file>
+	<checkpoint_seqnum>0</checkpoint_seqnum>
+	<checkpoint_interval>0</checkpoint_interval>
+	<checkpoint_keepall>FALSE</checkpoint_keepall>
+	<check_version>FALSE</check_version>
+	<random_number_generator>RNG3</random_number_generator>
+	<mainloop_state>INIT</mainloop_state>
+	<pauseat>NEVER</pauseat>
+	<infourl>http://gridlab-d.sourceforge.net/info.php?title=Special:Search/</infourl>
+	<hostname>localhost</hostname>
+	<hostaddr>127.0.0.1</hostaddr>
+	<autostart_gui>TRUE</autostart_gui>
+	<master>""</master>
+	<master_port>0</master_port>
+	<multirun_mode>STANDALONE</multirun_mode>
+	<multirun_conn>NONE</multirun_conn>
+	<signal_timeout>5000</signal_timeout>
+	<slave_port>6267</slave_port>
+	<slave_id>0</slave_id>
+	<return_code>0</return_code>
+	<exit_code>0</exit_code>
+	<module_compiler_flags>NONE</module_compiler_flags>
+	<init_max_defer>64</init_max_defer>
+	<mt_analysis>FALSE</mt_analysis>
+	<inline_block_size>1048576</inline_block_size>
+	<validate>TSTD|RALL</validate>
+	<sanitize>NAMES|POSITIONS</sanitize>
+	<sanitize_prefix>GLD_</sanitize_prefix>
+	<sanitize_index>.txt</sanitize_index>
+	<sanitize_offset>""</sanitize_offset>
+	<simulation_mode>EVENT</simulation_mode>
+	<deltamode_timestep>+1e+07 ns</deltamode_timestep>
+	<deltamode_maximumtime>+3.6e+12 ns</deltamode_maximumtime>
+	<deltaclock>0</deltaclock>
+	<delta_current_clock>+0</delta_current_clock>
+	<deltamode_updateorder>connection,generators,tape,reliability,powerflow</deltamode_updateorder>
+	<deltamode_iteration_limit>10</deltamode_iteration_limit>
+	<deltamode_forced_extra_timesteps>0</deltamode_forced_extra_timesteps>
+	<deltamode_forced_always>FALSE</deltamode_forced_always>
+	<run_powerworld>FALSE</run_powerworld>
+	<bigranks>TRUE</bigranks>
+	<exename>gridlabd</exename>
+	<wget_options>"maxsize:100MB;update:newer"</wget_options>
+	<svnroot>http://gridlab-d.svn.sourceforge.net/svnroot/gridlab-d</svnroot>
+	<allow_reinclude>FALSE</allow_reinclude>
+	<VSOURCE>2401.7771198288433</VSOURCE>
+	<timezone>UTC0</timezone>
+	<sync-order>
+		<pass>
+			<name>pretopdown</name>
+			<rank>
+				<ordinal>0</ordinal>
+				<object>
+					<name>external_event_handler</name>
+					<id>1</id>
+				</object>
+				<object>
+					<name>Weather Data</name>
+					<id>3</id>
+				</object>
+				<object>
+					<name>ieeezipload</name>
+					<id>4</id>
+				</object>
+			</rank>
+		</pass>
+		<pass>
+			<name>bottomup</name>
+			<rank>
+				<ordinal>6</ordinal>
+				<object>
+					<name>fault_check_object</name>
+					<id>0</id>
+				</object>
+			</rank>
+		</pass>
+		<pass>
+			<name>posttopdown</name>
+			<rank>
+				<ordinal>0</ordinal>
+				<object>
+					<name>external_event_handler</name>
+					<id>1</id>
+				</object>
+			</rank>
+		</pass>
+	</sync-order>
+	<connection>
+		<version.major>4</version.major>
+		<version.minor>3</version.minor>
+		<native_list>
+		</native_list>
+		<json_list>
+			<inherits_from>native</inherits_from>
+		</json_list>
+		<helics_msg_list>
+		</helics_msg_list>
+	</connection>
+	<generators>
+		<version.major>4</version.major>
+		<version.minor>3</version.minor>
+		<diesel_dg_list>
+		</diesel_dg_list>
+		<windturb_dg_list>
+		</windturb_dg_list>
+		<energy_storage_list>
+		</energy_storage_list>
+		<inverter_list>
+		</inverter_list>
+		<rectifier_list>
+		</rectifier_list>
+		<battery_list>
+		</battery_list>
+		<solar_list>
+		</solar_list>
+		<central_dg_control_list>
+		</central_dg_control_list>
+		<controller_dg_list>
+		</controller_dg_list>
+		<inverter_dyn_list>
+		</inverter_dyn_list>
+	</generators>
+	<tape>
+		<version.major>4</version.major>
+		<version.minor>3</version.minor>
+		<player_list>
+			<player>
+				<id>4</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<clock>2020-11-20 18:33:07 UTC</clock>
+				<name>ieeezipload</name>
+				<property>(undefined)</property>
+				<file>ieeezipload.player</file>
+				<filetype>txt</filetype>
+				<mode>file</mode>
+				<loop>0</loop>
+				<value>+0</value>
+			</player>
+		</player_list>
+		<shaper_list>
+		</shaper_list>
+		<recorder_list>
+		</recorder_list>
+		<multi_recorder_list>
+		</multi_recorder_list>
+		<collector_list>
+		</collector_list>
+		<histogram_list>
+		</histogram_list>
+		<group_recorder_list>
+		</group_recorder_list>
+		<violation_recorder_list>
+		</violation_recorder_list>
+		<metrics_collector_list>
+		</metrics_collector_list>
+		<metrics_collector_writer_list>
+		</metrics_collector_writer_list>
+	</tape>
+	<reliability>
+		<version.major>4</version.major>
+		<version.minor>3</version.minor>
+		<metrics_list>
+		</metrics_list>
+		<eventgen_list>
+			<eventgen>
+				<id>1</id>
+				<rank>0</rank>
+				<out_svc>NEVER</out_svc>
+				<clock>2020-11-20 18:33:07 UTC</clock>
+				<name>external_event_handler</name>
+				<target_group>""</target_group>
+				<fault_type>""</fault_type>
+				<failure_dist>EXPONENTIAL</failure_dist>
+				<restoration_dist>PARETO</restoration_dist>
+				<failure_dist_param_1>+3.85802e-07</failure_dist_param_1>
+				<failure_dist_param_2>+0</failure_dist_param_2>
+				<restoration_dist_param_1>+1</restoration_dist_param_1>
+				<restoration_dist_param_2>+1.00028</restoration_dist_param_2>
+				<manual_outages>""</manual_outages>
+				<max_outage_length>+432000 s</max_outage_length>
+				<max_simultaneous_faults>-1</max_simultaneous_faults>
+				<controlled_switch>""</controlled_switch>
+				<switch_state>1</switch_state>
+				<external_fault_event>""</external_fault_event>
+				<use_external_faults>TRUE</use_external_faults>
+			</eventgen>
+		</eventgen_list>
+	</reliability>
+	<powerflow>
+		<version.major>4</version.major>
+		<version.minor>3</version.minor>
+		<node_list>
+			<inherits_from>powerflow_object</inherits_from>
+		</node_list>
+		<link_list>
+			<inherits_from>powerflow_object</inherits_from>
+		</link_list>
+		<capacitor_list>
+			<inherits_from>node</inherits_from>
+		</capacitor_list>
+		<fuse_list>
+			<inherits_from>link</inherits_from>
+		</fuse_list>
+		<meter_list>
+			<inherits_from>node</inherits_from>
+		</meter_list>
+		<line_list>
+			<inherits_from>link</inherits_from>
+		</line_list>
+		<line_spacing_list>
+		</line_spacing_list>
+		<overhead_line_list>
+			<inherits_from>line</inherits_from>
+		</overhead_line_list>
+		<underground_line_list>
+			<inherits_from>line</inherits_from>
+		</underground_line_list>
+		<overhead_line_conductor_list>
+		</overhead_line_conductor_list>
+		<underground_line_conductor_list>
+		</underground_line_conductor_list>
+		<line_configuration_list>
+		</line_configuration_list>
+		<transformer_configuration_list>
+		</transformer_configuration_list>
+		<transformer_list>
+			<inherits_from>link</inherits_from>
+		</transformer_list>
+		<load_list>
+			<inherits_from>node</inherits_from>
+		</load_list>
+		<regulator_configuration_list>
+		</regulator_configuration_list>
+		<regulator_list>
+			<inherits_from>link</inherits_from>
+		</regulator_list>
+		<triplex_node_list>
+			<inherits_from>powerflow_object</inherits_from>
+		</triplex_node_list>
+		<triplex_meter_list>
+			<inherits_from>triplex_node</inherits_from>
+		</triplex_meter_list>
+		<triplex_line_list>
+			<inherits_from>line</inherits_from>
+		</triplex_line_list>
+		<triplex_line_configuration_list>
+		</triplex_line_configuration_list>
+		<triplex_line_conductor_list>
+		</triplex_line_conductor_list>
+		<switch_list>
+			<inherits_from>link</inherits_from>
+		</switch_list>
+		<substation_list>
+			<inherits_from>node</inherits_from>
+		</substation_list>
+		<pqload_list>
+			<inherits_from>load</inherits_from>
+		</pqload_list>
+		<voltdump_list>
+		</voltdump_list>
+		<series_reactor_list>
+			<inherits_from>link</inherits_from>
+		</series_reactor_list>
+		<restoration_list>
+		</restoration_list>
+		<volt_var_control_list>
+		</volt_var_control_list>
+		<fault_check_list>
+			<fault_check>
+				<id>0</id>
+				<rank>6</rank>
+				<out_svc>NEVER</out_svc>
+				<clock>2020-11-20 18:33:07 UTC</clock>
+				<name>fault_check_object</name>
+				<check_mode>ONCHANGE</check_mode>
+				<output_filename>fault_check_output.txt</output_filename>
+				<reliability_mode>TRUE</reliability_mode>
+				<strictly_radial>FALSE</strictly_radial>
+				<full_output_file>FALSE</full_output_file>
+				<grid_association>TRUE</grid_association>
+				<eventgen_object>external_event_handler</eventgen_object>
+			</fault_check>
+		</fault_check_list>
+		<motor_list>
+			<inherits_from>node</inherits_from>
+		</motor_list>
+		<billdump_list>
+		</billdump_list>
+		<power_metrics_list>
+		</power_metrics_list>
+		<currdump_list>
+		</currdump_list>
+		<recloser_list>
+			<inherits_from>switch</inherits_from>
+		</recloser_list>
+		<sectionalizer_list>
+			<inherits_from>switch</inherits_from>
+		</sectionalizer_list>
+		<emissions_list>
+		</emissions_list>
+		<load_tracker_list>
+		</load_tracker_list>
+		<triplex_load_list>
+			<inherits_from>triplex_node</inherits_from>
+		</triplex_load_list>
+		<impedance_dump_list>
+		</impedance_dump_list>
+		<vfd_list>
+			<inherits_from>link</inherits_from>
+		</vfd_list>
+		<jsondump_list>
+		</jsondump_list>
+		<sync_check_list>
+		</sync_check_list>
+	</powerflow>
+	<climate>
+		<version.major>4</version.major>
+		<version.minor>3</version.minor>
+		<climate_list>
+			<climate>
+				<id>3</id>
+				<rank>0</rank>
+				<latitude>0N0:0.00</latitude>
+				<longitude>0E0:0.00</longitude>
+				<out_svc>NEVER</out_svc>
+				<clock>2020-11-20 18:33:07 UTC</clock>
+				<name>Weather Data</name>
+				<solar_elevation>+0</solar_elevation>
+				<solar_azimuth>+0</solar_azimuth>
+				<solar_zenith>+1.76499</solar_zenith>
+				<city>""</city>
+				<tmyfile>model_weather.csv</tmyfile>
+				<temperature>+46.3982 degF</temperature>
+				<humidity>+0.4147 pu</humidity>
+				<solar_flux>+0 W/sf</solar_flux>
+				<solar_direct>+0 W/sf</solar_direct>
+				<solar_diffuse>+0 W/sf</solar_diffuse>
+				<solar_global>+0 W/sf</solar_global>
+				<extraterrestrial_global_horizontal>+0 W/sf</extraterrestrial_global_horizontal>
+				<extraterrestrial_direct_normal>+126.998 W/sf</extraterrestrial_direct_normal>
+				<pressure>+0 mbar</pressure>
+				<wind_speed>+3.5075 mph</wind_speed>
+				<wind_dir>+0 deg</wind_dir>
+				<wind_gust>+0 mph</wind_gust>
+				<record.low>+0 degF</record.low>
+				<record.low_day>0</record.low_day>
+				<record.high>+0 degF</record.high>
+				<record.high_day>0</record.high_day>
+				<record.solar>+0 W/sf</record.solar>
+				<rainfall>+0 in/h</rainfall>
+				<snowdepth>+0 in</snowdepth>
+				<interpolate>NONE</interpolate>
+				<solar_horiz>+0</solar_horiz>
+				<solar_north>+0</solar_north>
+				<solar_northeast>+0</solar_northeast>
+				<solar_east>+0</solar_east>
+				<solar_southeast>+0</solar_southeast>
+				<solar_south>+0</solar_south>
+				<solar_southwest>+0</solar_southwest>
+				<solar_west>+0</solar_west>
+				<solar_northwest>+0</solar_northwest>
+				<solar_raw>+0 W/sf</solar_raw>
+				<ground_reflectivity>+0.3 pu</ground_reflectivity>
+				<reader>CSVREADER</reader>
+				<forecast>""</forecast>
+				<cloud_model>NONE</cloud_model>
+				<cloud_opacity>+1 pu</cloud_opacity>
+				<opq_sky_cov>+0 pu</opq_sky_cov>
+				<cloud_speed_factor>+1 pu</cloud_speed_factor>
+				<solar_cloud_direct>+0 W/sf</solar_cloud_direct>
+				<solar_cloud_diffuse>+0 W/sf</solar_cloud_diffuse>
+				<solar_cloud_global>+0 W/sf</solar_cloud_global>
+				<cloud_alpha>+400 pu</cloud_alpha>
+				<cloud_num_layers>+40 pu</cloud_num_layers>
+				<cloud_aerosol_transmissivity>+0.95 pu</cloud_aerosol_transmissivity>
+				<update_time>+1.6059e+09</update_time>
+			</climate>
+		</climate_list>
+		<weather_list>
+		</weather_list>
+		<csv_reader_list>
+			<csv_reader>
+				<id>2</id>
+				<rank>0</rank>
+				<latitude>0N0:0.00</latitude>
+				<longitude>0E0:0.00</longitude>
+				<out_svc>NEVER</out_svc>
+				<clock>2020-11-20 18:33:07 UTC</clock>
+				<name>CSVREADER</name>
+				<index>0</index>
+				<city_name>N/A</city_name>
+				<state_name>N/A</state_name>
+				<lat_deg>+0</lat_deg>
+				<lat_min>+0</lat_min>
+				<long_deg>+0</long_deg>
+				<long_min>+0</long_min>
+				<low_temp>+0</low_temp>
+				<high_temp>+0</high_temp>
+				<peak_solar>+0</peak_solar>
+				<elevation>0</elevation>
+				<status>INIT</status>
+				<timefmt>""</timefmt>
+				<timezone>""</timezone>
+				<timezone_offset>+0</timezone_offset>
+				<columns>""</columns>
+				<filename>model_weather.csv</filename>
+			</csv_reader>
+		</csv_reader_list>
+	</climate>
+</gridlabd>

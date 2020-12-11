@@ -20,13 +20,29 @@ config_file = os.path.join(base_path, "bin", "config.json")
 federates_directory = os.path.join(base_path, 'agents')
 
 # config skeleton
-config = {"broker": host == "localhost",
-          "federates": [],
-          "name": scenario_name,
-          }
-federate = {"directory": federates_directory,
-            "host": host,
-            }
+config = {
+    "broker": host == "localhost",
+    "federates": [],
+    "name": scenario_name
+}
+
+federate = {
+    "directory": federates_directory,
+    "host": host
+}
+
+gld_path = os.path.join(base_path, "inputs", "gridlabd", 'IEEE-13')
+gld_model = 'IEEE-13_Houses.glm'
+gld_helics_config = {
+    "name": "Feeder",
+    "loglevel": 3,
+    "coreType": "zmq",
+    "period": 1.0,
+    "offset": offset_feeder_run.seconds,
+    "uninterruptible": False,
+    "publications": [],
+    "subscriptions": []
+}
 
 
 # List the nodes allocated on job for ssh
@@ -135,8 +151,8 @@ if include_feeder:
     feeder = copy(federate)
     feeder['name'] = "Feeder"
     # feeder['exec'] = "python Feeder.py {}".format(ip_addr)
-    feeder['exec'] = "gridlabd IEEE-13_OCHRE.glm"
-    feeder['directory'] = os.path.join(base_path, 'inputs', 'gridlabd')
+    feeder['exec'] = "gridlabd {}".format(gld_model)
+    feeder['directory'] = gld_path
     config['federates'].append(feeder)
 
 # Add houses, hems, and brokers
@@ -147,12 +163,27 @@ if include_house:
         house['exec'] = "python House.py {} {}".format(load, ip_addr)
         house['name'] = "House_{}".format(load)
         config['federates'].append(house)
+        gld_helics_config['publications'].append({
+            'global': False,
+            'key': 'House_{}/voltage'.format(load),
+            'type': 'complex',
+            'info': '{{"object" : "{}", "property" : "voltage_12"}}'.format(feeder_loads[load])
+        })
+        gld_helics_config['subscriptions'].append({
+            'key': 'House_{}/load_to_feeder'.format(load),
+            'type': 'complex',
+            'required': True,
+            'info': '{{"object" : "{}", "property" : "constant_power_12"}}'.format(feeder_loads[load])
+        })
 
         if include_hems:
             hems = copy(federate)
             hems['exec'] = "python Hems.py {} {}".format(load, ip_addr)
             hems['name'] = "hems_{}".format(load)
             config['federates'].append(hems)
+        
+    with open(os.path.join(gld_path, 'gld_helics_config.json'), 'w+') as f:
+        f.write(json.dumps(gld_helics_config, indent=4, separators=(",", ":")))
 
 # Create the output directory for the scenario
 if os.path.isdir(output_path):

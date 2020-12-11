@@ -1,0 +1,492 @@
+{
+    "name":"Feeder",
+    "loglevel":3,
+    "coreType":"zmq",
+    "period":1.0,
+    "offset":0,
+    "uninterruptible":false,
+    "publications":[
+        {
+            "global":false,
+            "key":"House_n1/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_1\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n2/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_2\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n3/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_3\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n4/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_4\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n5/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_5\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n6/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_6\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n7/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_7\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n8/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_8\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n9/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_9\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n10/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_10\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n11/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_11\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n12/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_12\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n13/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_13\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n14/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_14\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n15/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_15\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n16/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_16\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n17/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_17\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n18/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_18\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n19/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_19\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n20/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_20\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n21/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_21\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n22/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_22\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n23/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_23\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n24/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_24\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n25/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_25\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n26/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_26\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n27/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_27\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n28/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_28\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n29/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_29\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n30/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_30\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n31/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_31\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n32/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_32\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n33/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_33\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n34/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_34\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n35/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_35\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n36/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_36\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n37/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_37\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n38/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_38\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n39/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_39\", \"property\" : \"voltage_12\"}"
+        },
+        {
+            "global":false,
+            "key":"House_n40/voltage",
+            "type":"complex",
+            "info":"{\"object\" : \"tl_house_40\", \"property\" : \"voltage_12\"}"
+        }
+    ],
+    "subscriptions":[
+        {
+            "key":"House_n1/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_1\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n2/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_2\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n3/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_3\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n4/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_4\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n5/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_5\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n6/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_6\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n7/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_7\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n8/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_8\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n9/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_9\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n10/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_10\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n11/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_11\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n12/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_12\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n13/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_13\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n14/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_14\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n15/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_15\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n16/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_16\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n17/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_17\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n18/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_18\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n19/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_19\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n20/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_20\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n21/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_21\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n22/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_22\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n23/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_23\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n24/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_24\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n25/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_25\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n26/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_26\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n27/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_27\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n28/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_28\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n29/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_29\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n30/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_30\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n31/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_31\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n32/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_32\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n33/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_33\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n34/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_34\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n35/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_35\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n36/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_36\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n37/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_37\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n38/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_38\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n39/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_39\", \"property\" : \"constant_power_12\"}"
+        },
+        {
+            "key":"House_n40/load_to_feeder",
+            "type":"complex",
+            "required":true,
+            "info":"{\"object\" : \"tl_house_40\", \"property\" : \"constant_power_12\"}"
+        }
+    ]
+}

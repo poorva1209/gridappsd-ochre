@@ -100,7 +100,7 @@ class House(Agent):
         self.house = Dwelling(self.house_id, equipment, **house_args)
 
     def setup_pub_sub(self):
-        topic_to_feeder_load = "load_complex"
+        topic_to_feeder_load = "load_to_feeder"
         self.register_pub("power", topic_to_feeder_load, h.helics_data_type_complex, global_type=False)
 
         topic_from_feeder = "Feeder/House_{}/voltage".format(self.house_id)
@@ -124,8 +124,7 @@ class House(Agent):
 
     def get_voltage_from_feeder(self):
         voltage = self.fetch_subscription("Feeder")
-        print(voltage)
-        return 1 if voltage is None else abs(voltage.real ** 2 + voltage.imag ** 2) ** 0.5 / 2401.7771
+        return 1 if voltage is None else (voltage.real ** 2 + voltage.imag ** 2) ** 0.5 / 240.0   # convert voltage to p.u. values
 
     def send_powers_to_feeder(self, power_to_feeder):
         self.publish_to_topic("power", power_to_feeder)
@@ -149,7 +148,7 @@ class House(Agent):
             else:
                 to_ext_control, to_feeder = self.house.update(voltage=voltage)
     
-        self.send_powers_to_feeder(complex(to_feeder['P Total'], to_feeder['Q Total']))
+        self.send_powers_to_feeder(complex(to_feeder['P Total'] * 1000, to_feeder['Q Total'] * 1000)) # convert kW to W, kVAr to VAr
         self.status = {}
         for k, v in to_ext_control.items():
             if isinstance(v, np.ndarray):

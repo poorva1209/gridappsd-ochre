@@ -3,8 +3,8 @@ import pandas as pd
 from datetime import datetime, timedelta
 
 # Scenario Name (used for finding Master Spreadsheet)
-scenario_name = os.environ['SCENARIO_NAME'] if 'SCENARIO_NAME' in os.environ else 'test30'
-no_of_homes = int(os.environ['NO_OF_HOMES']) if 'NO_OF_HOMES' in os.environ else 10
+scenario_name = os.environ['SCENARIO_NAME'] if 'SCENARIO_NAME' in os.environ else 'test40'
+no_of_homes = int(os.environ['NO_OF_HOMES']) if 'NO_OF_HOMES' in os.environ else 40
 der_penetration_pc = os.environ['DER_PENETRATION'] if 'DER_PENETRATION' in os.environ else 'BAU'  # 'BAU', '50p', '100p'
 building_model = os.environ['BUILDING_MODEL'] if 'BUILDING_MODEL' in os.environ else 'sd_ca'
 debug = True
@@ -36,11 +36,11 @@ hems_horizon = timedelta(hours = 8)
 
 # Time offsets for communication order
 offset_house_run = timedelta(seconds=0)
-offset_feeder_run = timedelta(seconds=10)
+offset_feeder_run = timedelta(seconds=0)
 offset_hems_run = timedelta(seconds=20)
 offset_hems_to_house = timedelta(seconds=30)
 offset_house_to_hems = timedelta(seconds=40)
-offset_save_results = timedelta(0)
+offset_save_results = timedelta(seconds=50)
 
 # Input/Output file paths
 base_path = os.path.abspath(os.path.join(os.path.dirname(__file__)))
@@ -70,7 +70,7 @@ feeder_results_path = os.path.join(output_path, 'Feeder')
 
 # processing master spreadsheet
 # UPDATED THE NAME OF MS once we have final version
-ms_file = os.path.join(input_path, "MS", "Main_spreadsheet_test40.xlsx")
+ms_file = os.path.join(input_path, "MS", "Main_spreadsheet_test40_original.xlsx")
 master_df = pd.read_excel(ms_file, index_col='House_ID')[:no_of_homes]
 house_ids = master_df.index.to_list()
 feeder_loads = dict(zip(house_ids, master_df['Load_name']))
