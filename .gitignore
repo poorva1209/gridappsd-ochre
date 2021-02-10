@@ -16,7 +16,6 @@ build/
 dist/
 *.egg-info/
 outputs/
-src/
 act.sh
 .vscode/
 logs/
