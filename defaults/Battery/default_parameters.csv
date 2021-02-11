@@ -1,0 +1,19 @@
+Description,Name,Value,Units
+Initial open circuit voltage,initial_voltage,51.8,V
+Nominal capacity of battery,capacity_kwh,3,kWh
+Max power of battery,capacity_kw,2,kW
+Number of cells in series,n_series,14,cells
+Initial State of Charge,soc_init,0.5,fraction
+Maximum SOC,soc_max,0.9,fraction
+Minimum SOC,soc_min,0.1,fraction
+Self-discharge rate,discharge_pct,0,% per day
+Cell resistance,r_cell,0.09,ohm
+Charging Efficiency,eta_charge,0.95,fraction
+Discharging Efficiency,eta_discharge,0.95,fraction
+Schedule: Charge Start Time,charge_start_hour,9,hour of day
+Schedule: Discharge Start Time,discharge_start_hour,16,hour of day
+Schedule: Charge Power,charge_power,1,kW
+Schedule: Discharge Power,discharge_power,1,kW
+Self-Consumption: Allow Charge from any Solar,charge_any_solar,0,boolean
+Self-Consumption: Charge Limit Offset,charge_limit_offset,0,kW
+Self-Consumption: Discharge Limit Offset,discharge_limit_offset,0,kW
