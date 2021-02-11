@@ -44,6 +44,6 @@ Inside the container,
 ```sh
 conda activate fastderms
 python bin/make_config_file.py localhost
-helics run --path /bin/config.json --broker-loglevel=2
+helics run --path bin/config.json --broker-loglevel=2
 ```
 

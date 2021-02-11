@@ -4,7 +4,7 @@ dependencies:
  - boost
  - zeromq
  - cmake
- - xlrd
+ - openpyxl
  - lxml
  - git
  - pandas
