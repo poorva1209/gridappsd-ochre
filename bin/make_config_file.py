@@ -151,7 +151,7 @@ if include_feeder:
     feeder = copy(federate)
     feeder['name'] = "Feeder"
     # feeder['exec'] = "python Feeder.py {}".format(ip_addr)
-    feeder['exec'] = "gridlabd {}".format(gld_model)
+    feeder['exec'] = "/gridappsd/bin/gridlabd.sh {}".format(gld_model)
     feeder['directory'] = gld_path
     config['federates'].append(feeder)
 
