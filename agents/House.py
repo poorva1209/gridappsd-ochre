@@ -124,7 +124,7 @@ class House(Agent):
 
     def get_voltage_from_feeder(self):
         voltage = self.fetch_subscription("Feeder")
-        return 1 if voltage is None else (voltage.real ** 2 + voltage.imag ** 2) ** 0.5 / 240.0   # convert voltage to p.u. values
+        return 1 if voltage is None else (voltage[0] ** 2 + voltage[1] ** 2) ** 0.5 / 240.0   # convert voltage to p.u. values
 
     def send_powers_to_feeder(self, power_to_feeder):
         self.publish_to_topic("power", power_to_feeder)
