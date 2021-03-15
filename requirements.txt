@@ -4,11 +4,11 @@ click==7.1.2
 cycler==0.10.0
 decorator==4.4.2
 dss-python==0.10.7
--e file:src/dwelling-model#egg=dwelling_model --no-index
+-e file:/gridappsd/services/gridappsd-ochre/src/dwelling-model#egg=dwelling_model --no-index
 et-xmlfile==1.0.1
 future==0.18.2
 helics 
--e file:src/helics-runner#egg=helics_cli --no-index
+-e file:/gridappsd/services/gridappsd-ochre/src/helics-runner#egg=helics_cli --no-index
 jdcal==1.4.1
 Jinja2==2.11.3
 kiwisolver==1.3.1
