@@ -12,11 +12,15 @@ from constants import *
 
 # Get the host type 
 host = sys.argv[1]
+base_path = sys.argv[2]
+config_file_name = sys.argv[3]
+port = sys.argv[4]
+simulation_id = sys.argv[5]
 
 houses_per_broker = 60
 
 # Set paths 
-config_file = os.path.join(base_path, "bin", "config.json")
+config_file = os.path.join(base_path, config_file_name)
 federates_directory = os.path.join(base_path, 'agents')
 
 # config skeleton
@@ -139,12 +143,12 @@ def construct_configs():
 
 # Getting the broker's network address
 if host != "eagle":
-    ip_addr = '0.0.0.0:4545'
+    ip_addr = '0.0.0.0:'+port
 else:
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     s.connect(("8.8.8.8", 80))
     ip_addr = str(s.getsockname()[0])
-    ip_addr += ":4545"
+    ip_addr += ":"+port
 print(ip_addr)
 # Creating the Feeder fed
 if include_feeder:
