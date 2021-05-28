@@ -23,7 +23,7 @@ times = pd.date_range(start=start_time, end=end_time, freq=time_step)[:-1]
 # Agents to run
 include_house = os.environ['HOUSE'] == 'True' if 'HOUSE' in os.environ else True
 include_feeder = os.environ['FEEDER'] == 'True' if 'FEEDER' in os.environ else False
-include_hems = os.environ['HEMS'] == 'True' if 'HEMS' in os.environ else True
+include_hems = os.environ['HEMS'] == 'True' if 'HEMS' in os.environ else False
 
 # Frequency of Updates
 freq_house = timedelta(minutes=1)
