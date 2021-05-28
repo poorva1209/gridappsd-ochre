@@ -24,8 +24,9 @@ config_file = os.path.join(base_path, config_file_name)
 federates_directory = os.path.join(base_path, 'agents')
 
 # config skeleton
+# Never start HELICS broker, it will be started by the GridAPPS-D platform
 config = {
-    "broker": host == "localhost",
+    "broker": False,
     "federates": [],
     "name": scenario_name
 }
