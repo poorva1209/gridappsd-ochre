@@ -106,20 +106,17 @@ class House(Agent):
         topic_from_feeder = "Feeder/House_{}/voltage".format(self.house_id)
         self.register_sub("Feeder", topic_from_feeder, var_type=h.helics_data_type_complex)
 
-        if include_hems:
-            topic_to_ctrlr_status = "status"
-            self.register_pub("status", topic_to_ctrlr_status, h.helics_data_type_string, global_type=False)
+        # topic_to_ctrlr_status = "status"
+        # self.register_pub("status", topic_to_ctrlr_status, h.helics_data_type_string, global_type=False)
 
-            topic_from_ctrlr = "command_input"
-            self.register_endpoint("controls", topic_from_ctrlr)
+        topic_from_ctrlr = "command_input"
+        self.register_endpoint("controls", topic_from_ctrlr)
 
     def setup_actions(self):
         # Note: order matters!
-        if include_hems:
-            self.add_action(self.get_hems_controls, 'Get HEMS Controls', freq_hems, offset_house_pull_controls)
+        # self.add_action(self.get_hems_controls, 'Get HEMS Controls', freq_hems, offset_hems_to_house)
         self.add_action(self.run_house, 'Run House', freq_house, offset_house_run)
-        if include_hems:
-            self.add_action(self.send_status_to_hems, 'Send House Status', freq_hems, offset_house_run)
+        # self.add_action(self.send_status_to_hems, 'Send House Status', freq_hems, offset_house_run)
         self.add_action(self.save_results, 'Save Results', freq_save_results, offset_save_results)
 
     def get_voltage_from_feeder(self):
@@ -136,20 +133,14 @@ class House(Agent):
         messages = self.fetch_messages("controls")
 
         # Only use the latest message out of all pending messages
-        self.hems_controls = messages[0] if messages and len(messages) > 0 else None
+        return messages[0] if messages and len(messages) > 0 else None
 
     def run_house(self):
         voltage = self.get_voltage_from_feeder()
+        control_sig = self.get_hems_controls()
 
         # run simulator
-        if include_hems and self.hems_controls and voltage:
-            to_ext_control, to_feeder = self.house.update(voltage=voltage, from_ext_control=self.hems_controls)
-        else:
-            self.print_log("Did not receive house controls: {} and voltage {}".format(self.hems_controls, voltage))
-            if voltage == 'None' or voltage == None: 
-                to_ext_control, to_feeder = self.house.update(voltage=1)
-            else:
-                to_ext_control, to_feeder = self.house.update(voltage=voltage)
+        to_ext_control, to_feeder = self.house.update(voltage=voltage, from_ext_control=control_sig)
     
         self.send_powers_to_feeder(complex(to_feeder['P Total'] * 1000, to_feeder['Q Total'] * 1000)) # convert kW to W, kVAr to VAr
         self.status = {}
