@@ -67,6 +67,7 @@ class Agent:
         # Set up publications and subscriptions
         self.publications = {}
         self.subscriptions = {}
+        self.endpoints = {}
         self.setup_pub_sub()
 
         if run_helics:
@@ -116,6 +117,15 @@ class Agent:
             sub = None
         self.subscriptions[name] = (sub, var_type, default)
 
+    def register_endpoint(self, name, topic=None, var_type=h.helics_data_type_string):
+        if topic is None:
+            topic = name
+        if self.fed is not None:
+            ep = h.helicsFederateRegisterEndpoint(self.fed, topic, var_type, None)
+        else:
+            ep = None
+        self.endpoints[name] = (ep, var_type)
+
     def publish_to_topic(self, name, value):
         if self.fed is None:
             return
@@ -155,6 +165,20 @@ class Agent:
         if self.debug:
             self.print_log('Received from {}:'.format(name), data)
         return data
+
+    def fetch_messages(self, name):
+        ep, _ = self.endpoints[name]
+        if self.fed is None or ep is None:
+            return None
+        pendingMessageCount = h.helicsEndpointPendingMessagesCount(ep)
+        messageDicts = []
+        for _ in range(pendingMessageCount):
+            message = h.helicsEndpointGetMessage(ep)
+            messageString = h.helicsMessageGetString(message)
+            messageDict = json.loads(messageString)
+            messageDicts.append(messageDict)
+    
+        return messageDicts
 
     def step_to(self, requested_time):
         t_requested = (requested_time - start_time).total_seconds()
