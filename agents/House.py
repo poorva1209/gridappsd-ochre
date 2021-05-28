@@ -107,11 +107,11 @@ class House(Agent):
         self.register_sub("Feeder", topic_from_feeder, var_type=h.helics_data_type_complex)
 
         if include_hems:
-            topic_to_ctrlr_status = "house_status_to_ctrlr_{}".format(self.house_id)
-            self.register_pub("status", topic_to_ctrlr_status, h.helics_data_type_string)
+            topic_to_ctrlr_status = "status"
+            self.register_pub("status", topic_to_ctrlr_status, h.helics_data_type_string, global_type=False)
 
-            topic_from_ctrlr = "ctrlr_controls_to_house_{}".format(self.house_id)
-            self.register_sub("controls", topic_from_ctrlr)
+            topic_from_ctrlr = "command_input"
+            self.register_endpoint("controls", topic_from_ctrlr)
 
     def setup_actions(self):
         # Note: order matters!
@@ -133,7 +133,10 @@ class House(Agent):
         self.publish_to_topic("status", self.status)
 
     def get_hems_controls(self):
-        self.hems_controls = self.fetch_subscription("controls")
+        messages = self.fetch_messages("controls")
+
+        # Only use the latest message out of all pending messages
+        self.hems_controls = messages[0] if messages and len(messages) > 0 else None
 
     def run_house(self):
         voltage = self.get_voltage_from_feeder()
@@ -174,7 +177,7 @@ if __name__ == "__main__":
     if len(sys.argv) >= 3:
         house_id = str(sys.argv[1])
         addr = str(sys.argv[2])
-        agent = House(house_id, broker_addr=addr)
+        agent = House(house_id, broker_addr=addr, fed_type='combo')
     elif len(sys.argv) == 2:
         house_id = str(sys.argv[1])
         agent = House(house_id, debug=True, run_helics=False)
