@@ -27,7 +27,7 @@ include_hems = os.environ['HEMS'] == 'True' if 'HEMS' in os.environ else False
 
 # Frequency of Updates
 freq_house = timedelta(minutes=1)
-freq_hems = timedelta(minutes=15)
+freq_hems = timedelta(minutes=1)
 freq_feeder = timedelta(minutes=1)
 freq_save_results = timedelta(hours=1)
 
