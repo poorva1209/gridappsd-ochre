@@ -117,11 +117,11 @@ class Agent:
             sub = None
         self.subscriptions[name] = (sub, var_type, default)
 
-    def register_endpoint(self, name, topic=None, var_type=h.helics_data_type_string):
+    def register_endpoint(self, name, topic=None, var_type='string'):
         if topic is None:
             topic = name
         if self.fed is not None:
-            ep = h.helicsFederateRegisterEndpoint(self.fed, topic, var_type, None)
+            ep = h.helicsFederateRegisterEndpoint(self.fed, topic, var_type)
         else:
             ep = None
         self.endpoints[name] = (ep, var_type)
@@ -177,6 +177,8 @@ class Agent:
             messageString = h.helicsMessageGetString(message)
             messageDict = json.loads(messageString)
             messageDicts.append(messageDict)
+            if self.debug:
+                self.print_log('Received message from {}:'.format(name), messageDict)
     
         return messageDicts
 
