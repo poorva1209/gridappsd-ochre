@@ -1,0 +1,258 @@
+{
+    "broker": true,
+    "federates":[
+        {
+            "directory":"./inputs/gridlabd/IEEE-13",
+            "exec":"gridlabd IEEE-13_Houses.glm",
+            "host":"localhost",
+            "name":"Feeder"
+        },
+        {
+            "directory": "./",
+            "exec": "helics_player ctrl.player --corename player",
+            "host": "localhost",
+            "name": "Player"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n1 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n1"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n2 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n2"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n3 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n3"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n4 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n4"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n5 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n5"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n6 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n6"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n7 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n7"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n8 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n8"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n9 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n9"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n10 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n10"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n11 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n11"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n12 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n12"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n13 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n13"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n14 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n14"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n15 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n15"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n16 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n16"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n17 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n17"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n18 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n18"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n19 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n19"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n20 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n20"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n21 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n21"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n22 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n22"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n23 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n23"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n24 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n24"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n25 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n25"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n26 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n26"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n27 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n27"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n28 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n28"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n29 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n29"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n30 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n30"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n31 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n31"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n32 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n32"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n33 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n33"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n34 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n34"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n35 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n35"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n36 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n36"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n37 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n37"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n38 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n38"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n39 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n39"
+        },
+        {
+            "directory":"./agents",
+            "exec":"python3 House.py n40 0.0.0.0:4545",
+            "host":"localhost",
+            "name":"House_n40"
+        }
+    ],
+    "name":"test40"
+}

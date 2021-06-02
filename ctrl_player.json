@@ -1,0 +1,16 @@
+{
+  "messages": [
+    {
+      "time": 40.0,
+      "source": "src",
+      "dest": "House_n3/command_input",
+      "data": "{}"
+    },
+    {
+      "time": 70.0,
+      "source": "src",
+      "dest": "House_n3/command_input",
+      "data": "{\"Sol_status_CVXPY__Dimensionless\": 1, \"HVAC Heating\": {\"Heating Setpoint\": 19}, \"HVAC Cooling\": {\"Cooling Duty Cycle\": 0.0}, \"Heat Pump Water Heater\": {\"HP Duty Cycle\": 0.0, \"ER Duty Cycle\": 0.0}, \"PV\": {\"P Setpoint\": -1.1, \"Q Setpoint\": 0.5}, \"Battery\": {\"P Setpoint\": -1.0}, \"Load Fractions\": {\"Air Source Heat Pump\": 1, \"Heat Pump Water Heater\": 0, \"Electric Resistance Water Heater\": 0, \"Scheduled EV\": 0, \"Lighting\": 0.2, \"Exterior Lighting\": 0.0, \"Range\": 0.0, \"Dishwasher\": 0.0, \"Refrigerator\": 1.0, \"Clothes Washer\": 0.0, \"Clothes Dryer\": 0.0, \"MELs\": 0.2}}"
+    }
+  ]
+}

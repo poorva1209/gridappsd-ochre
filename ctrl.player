@@ -1,0 +1,6 @@
+# player file
+mess 40.0 src House_n3/command_input "test message 1"
+mess 50.0 src House_n3/command_input "test message 2"
+mess 60.0 src House_n3/command_input "test 3"
+mess 70.0 src House_n3/command_input "test 4"
+
