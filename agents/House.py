@@ -90,6 +90,7 @@ class House(Agent):
         self.hems_controls = None
         self.status = {}
         self.house = None
+        self.gridappsd_simulation_id = kwargs.get('simulation_id',"Feeder")
         kwargs['result_path'] = os.path.join(house_results_path, 'House_{}'.format(house_id)) 
         super().__init__('House_' + house_id, **kwargs)
 
@@ -103,7 +104,7 @@ class House(Agent):
         topic_to_feeder_load = "load_to_feeder"
         self.register_pub("power", topic_to_feeder_load, h.helics_data_type_complex, global_type=False)
 
-        topic_from_feeder = "Feeder/House_{}/voltage".format(self.house_id)
+        topic_from_feeder = "{}/House_{}/voltage".format(self.gridappsd_simulation_id, self.house_id)
         self.register_sub("Feeder", topic_from_feeder, var_type=h.helics_data_type_complex)
 
         # topic_to_ctrlr_status = "status"

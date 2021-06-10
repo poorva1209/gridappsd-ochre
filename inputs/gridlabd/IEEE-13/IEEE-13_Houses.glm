@@ -365,7 +365,7 @@ object line_configuration:607 {
 // Define line objects
 object overhead_line:632645 {
 	phases "BCN";
-	name 632-645;
+	name line_632-645;
 	from node:632;
 	to node:645;
 	length 500;
@@ -374,7 +374,7 @@ object overhead_line:632645 {
 
 object overhead_line:645646 {
 	phases "BCN";
-	name 645-646;
+	name line_645-646;
 	from node:645;
 	to node:646;
 	length 300;
@@ -383,7 +383,7 @@ object overhead_line:645646 {
 
 object overhead_line:630632 {
 	phases "ABCN";
-	name 630-632;
+	name line_630-632;
 	from node:630;
 	to node:632;
 	length 2000;
@@ -393,7 +393,7 @@ object overhead_line:630632 {
 // Split line for distributed load
 object overhead_line:6326321 {
 	phases "ABCN";
-	name 632-6321;
+	name line_632-6321;
 	from node:632;
 	to node:6321;
 	length 500;
@@ -402,7 +402,7 @@ object overhead_line:6326321 {
 
 object overhead_line:6321671 {
 	phases "ABCN";
-	name 6321-671;
+	name line_6321-671;
 	from node:6321;
 	to node:671;
 	length 1500;
@@ -412,7 +412,7 @@ object overhead_line:6321671 {
 // End split line
 object overhead_line:671680 {
 	phases "ABCN";
-	name 671-680;
+	name line_671-680;
 	from node:671;
 	to node:680;
 	length 1000;
@@ -421,7 +421,7 @@ object overhead_line:671680 {
 
 object overhead_line:671684 {
 	phases "ACN";
-	name 671-684;
+	name line_671-684;
 	from node:671;
 	to node:684;
 	length 300;
@@ -430,7 +430,7 @@ object overhead_line:671684 {
 
 object overhead_line:684611 {
 	phases "CN";
-	name 684-611;
+	name line_684-611;
 	from node:684;
 	to node:611;
 	length 300;
@@ -439,7 +439,7 @@ object overhead_line:684611 {
 
 object underground_line:684652 {
 	phases "AN";
-	name 684-652;
+	name line_684-652;
 	from node:684;
 	to node:652;
 	length 800;
@@ -448,7 +448,7 @@ object underground_line:684652 {
 
 object underground_line:692675 {
 	phases "ABC";
-	name 692-675;
+	name line_692-675;
 	from node:692;
 	to node:675;
 	length 500;
@@ -457,7 +457,7 @@ object underground_line:692675 {
 
 object overhead_line:632633 {
 	phases "ABCN";
-	name 632-633;
+	name line_632-633;
 	from node:632;
 	to node:633;
 	length 500;
@@ -466,7 +466,7 @@ object overhead_line:632633 {
 
 // Create node objects
 object node:633 {
-	name 633;
+	name node_633;
 	phases "ABCN";
 	voltage_A 2401.7771;
 	voltage_B -1200.8886-2080.000j;
@@ -475,7 +475,7 @@ object node:633 {
 }
 
 object node:630 {
-	name 630;
+	name node_630;
 	phases "ABCN";
 	voltage_A 2401.7771+0j;
 	voltage_B -1200.8886-2080.000j;
@@ -484,7 +484,7 @@ object node:630 {
 }
  
 object node:632 {
-	name 632;
+	name node_632;
 	phases "ABCN";
 	voltage_A 2401.7771;
 	voltage_B -1200.8886-2080.000j;
@@ -493,9 +493,8 @@ object node:632 {
 }
 
 object node:650 {
-	name 650;
+	name node_650;
 	phases "ABCN";
-	bustype SWING;
 	voltage_A 2401.7771;
 	voltage_B -1200.8886-2080.000j;
 	voltage_C -1200.8886+2080.000j;
@@ -503,7 +502,7 @@ object node:650 {
 } 
  
 object node:671 {
-	name 671;
+	name node_671;
 	phases "ABCN";
 	voltage_A 2401.7771;
 	voltage_B -1200.8886-2080.000j;
@@ -512,7 +511,7 @@ object node:671 {
 }
 
 object node:680 {
-	name 680;
+	name node_680;
 	phases "ABCN";
 	voltage_A 2401.7771;
 	voltage_B -1200.8886-2080.000j;
@@ -522,7 +521,7 @@ object node:680 {
  
  
 object node:684 {
-	name 684;
+	name "node_684";
 	phases "ACN";
 	voltage_A 2401.7771;
 	voltage_B -1200.8886-2080.000j;
@@ -533,15 +532,15 @@ object node:684 {
 // distributed load between node 632 and 671
 // 2/3 of load 1/4 of length down line: Kersting p.56
 object node:6711 {
-	name 6711;
-	parent 611;
+	name node_6711;
+	parent node_611;
 	phases "CN";
 	voltage_C -1200.8886+2080.000j;
 	nominal_voltage 2401.7771; 
 }
  
 object node:6321 {
-	name 6321;
+	name node_6321;
 	phases "ABCN";
 	voltage_A 2401.7771;
 	voltage_B -1200.8886-2080.000j;
@@ -551,14 +550,14 @@ object node:6321 {
  
 // Create node objects with attached loads 
 object node:611 {
-	name 611;
+	name node_611;
 	phases "CN";
 	voltage_C -1200.8886+2080.000j;
 	nominal_voltage 2401.7771;
 }
 
 object node:634 {
-	name 634;
+	name node_634;
 	phases "ABCN";
 	voltage_A 480.000+0j;
 	voltage_B -240.000-415.6922j;
@@ -567,7 +566,7 @@ object node:634 {
 }
 
 object node:645 {
-	name 645;
+	name node_645;
 	phases "BCN";
 	voltage_A 2401.7771;
 	voltage_B -1200.8886-2080.000j;
@@ -576,7 +575,7 @@ object node:645 {
 }
 
 object node:646 {
-	name 646;
+	name node_646;
 	phases "BCN";
 	voltage_A 2401.7771;
 	voltage_B -1200.8886-2080.000j;
@@ -585,7 +584,7 @@ object node:646 {
 }
 
 object node:652 {
-	name 652;
+	name node_652;
 	phases "AN";
 	voltage_A 2401.7771;
 	voltage_B -1200.8886-2080.000j;
@@ -594,7 +593,7 @@ object node:652 {
 }
 
 object node:675 {
-	name 675;
+	name node_675;
 	phases "ABCN";
 	voltage_A 2401.7771;
 	voltage_B -1200.8886-2080.000j;
@@ -602,13 +601,67 @@ object node:675 {
 	nominal_voltage 2401.7771;
 }
 
+object node {
+  name "cap1";
+  phases ABCN;
+  nominal_voltage 2401.78;
+}
+
+object node {
+  name "cap2";
+  phases ABCN;
+  nominal_voltage 2401.78;
+}
+
 object node:692 {
-	name 692;
+	name node_692;
 	phases "ABCN";
 	voltage_A 2401.7771;
 	voltage_B -1200.8886-2080.000j;
 	voltage_C -1200.8886+2080.000j;
 	nominal_voltage 2401.7771;
+}
+
+object substation {
+  name "sourcebus";
+  bustype SWING;
+  phases ABCN;
+  nominal_voltage 66395.28;
+  base_power 12MVA;
+  power_convergence_value 100VA;
+  positive_sequence_voltage ${VSOURCE};
+}
+
+object node {
+  name "rootbus";
+  phases ABCN;
+  nominal_voltage 66395.28;
+}
+
+object transformer_configuration {
+  name "xcon_source_650";
+  connect_type WYE_WYE;
+  primary_voltage 115000.000;
+  secondary_voltage 4160.000;
+  power_rating 100000.000;
+  resistance 0.004000;
+  reactance 0.000001;
+  shunt_reactance 999999.996425;
+  shunt_resistance 999999.996425;
+}
+object transformer {
+  name "xf_source_650";
+  from "rootbus";
+  to "node_650";
+  phases ABC;
+  configuration "xcon_source_650";
+  continuous_rating_A 552.25;
+  continuous_rating_B 552.25;
+  continuous_rating_C 552.25;
+  emergency_rating_A 753.07;
+  emergency_rating_B 753.07;
+  emergency_rating_C 753.07;
+  // vector group Yy;
 }
 
 object transformer {
@@ -1063,7 +1116,8 @@ object triplex_meter {
 }
 
 object triplex_line {
-	phases CS; 
+	phases CS;
+    name "tpx_object_110";
 	from trip_node1; 
 	to tl_house_1; 
 	length 0; 
@@ -1072,6 +1126,7 @@ object triplex_line {
 
 object triplex_line {
 	phases AS; 
+    name "tpx_object_111";
 	from trip_node2; 
 	to tl_house_2; 
 	length 0; 
@@ -1079,6 +1134,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_112";
 	phases BS; 
 	from trip_node3; 
 	to tl_house_3; 
@@ -1087,6 +1143,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_113";
 	phases CS; 
 	from trip_node4; 
 	to tl_house_4; 
@@ -1095,6 +1152,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_114";
 	phases BS; 
 	from trip_node5; 
 	to tl_house_5; 
@@ -1103,6 +1161,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_115";
 	phases CS; 
 	from trip_node6; 
 	to tl_house_6; 
@@ -1111,6 +1170,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_116";
 	phases BS; 
 	from trip_node7; 
 	to tl_house_7; 
@@ -1119,6 +1179,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_117";
 	phases CS; 
 	from trip_node8; 
 	to tl_house_8; 
@@ -1127,6 +1188,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_118";
 	phases AS; 
 	from trip_node9; 
 	to tl_house_9; 
@@ -1135,6 +1197,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_119";
 	phases AS; 
 	from trip_node10; 
 	to tl_house_10; 
@@ -1143,6 +1206,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_120";
 	phases BS; 
 	from trip_node11; 
 	to tl_house_11; 
@@ -1151,6 +1215,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_121";
 	phases CS; 
 	from trip_node12; 
 	to tl_house_12; 
@@ -1159,6 +1224,7 @@ object triplex_line {
 }
 
 object triplex_line {
+    name "tpx_object_122";
 	phases AS; 
 	from trip_node13; 
 	to tl_house_13; 
@@ -1167,6 +1233,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_123";
 	phases BS; 
 	from trip_node14; 
 	to tl_house_14; 
@@ -1175,6 +1242,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_124";
 	phases CS; 
 	from trip_node15; 
 	to tl_house_15; 
@@ -1183,6 +1251,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_125";
 	phases CS; 
 	from trip_node1; 
 	to tl_house_16; 
@@ -1191,6 +1260,7 @@ object triplex_line {
 }
 
 object triplex_line {
+    name "tpx_object_126";
 	phases AS; 
 	from trip_node2; 
 	to tl_house_17; 
@@ -1199,6 +1269,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_127";
 	phases BS; 
 	from trip_node3; 
 	to tl_house_18; 
@@ -1207,6 +1278,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_128";
 	phases CS; 
 	from trip_node4; 
 	to tl_house_19; 
@@ -1215,6 +1287,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_129";
 	phases BS; 
 	from trip_node5; 
 	to tl_house_20; 
@@ -1223,6 +1296,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_130";
 	phases CS; 
 	from trip_node6; 
 	to tl_house_21; 
@@ -1231,6 +1305,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_131";
 	phases BS; 
 	from trip_node7; 
 	to tl_house_22; 
@@ -1239,6 +1314,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_132";
 	phases CS; 
 	from trip_node8; 
 	to tl_house_23; 
@@ -1247,6 +1323,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_133";
 	phases AS; 
 	from trip_node9; 
 	to tl_house_24; 
@@ -1255,6 +1332,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_134";
 	phases AS; 
 	from trip_node10; 
 	to tl_house_25; 
@@ -1263,6 +1341,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_135";
 	phases BS; 
 	from trip_node11; 
 	to tl_house_26; 
@@ -1271,6 +1350,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_136";
 	phases CS; 
 	from trip_node12; 
 	to tl_house_27; 
@@ -1279,6 +1359,7 @@ object triplex_line {
 }
 
 object triplex_line {
+    name "tpx_object_137";
 	phases AS; 
 	from trip_node13; 
 	to tl_house_28; 
@@ -1287,6 +1368,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_138";
 	phases BS; 
 	from trip_node14; 
 	to tl_house_29; 
@@ -1295,6 +1377,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_139";
 	phases CS; 
 	from trip_node15; 
 	to tl_house_30; 
@@ -1303,6 +1386,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_140";
 	phases CS; 
 	from trip_node1; 
 	to tl_house_31; 
@@ -1311,6 +1395,7 @@ object triplex_line {
 }
 
 object triplex_line {
+    name "tpx_object_141";
 	phases AS; 
 	from trip_node2; 
 	to tl_house_32; 
@@ -1319,6 +1404,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_142";
 	phases BS; 
 	from trip_node3; 
 	to tl_house_33; 
@@ -1327,6 +1413,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_143";
 	phases CS; 
 	from trip_node4; 
 	to tl_house_34; 
@@ -1335,6 +1422,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_144";
 	phases BS; 
 	from trip_node5; 
 	to tl_house_35; 
@@ -1343,6 +1431,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_145";
 	phases CS; 
 	from trip_node6; 
 	to tl_house_36; 
@@ -1351,6 +1440,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_146";
 	phases BS; 
 	from trip_node7; 
 	to tl_house_37; 
@@ -1359,6 +1449,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_147";
 	phases CS; 
 	from trip_node8; 
 	to tl_house_38; 
@@ -1367,6 +1458,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_148";
 	phases AS; 
 	from trip_node9; 
 	to tl_house_39; 
@@ -1375,6 +1467,7 @@ object triplex_line {
 }
  
 object triplex_line {
+    name "tpx_object_149";
 	phases AS; 
 	from trip_node10; 
 	to tl_house_40; 
@@ -1385,7 +1478,7 @@ object triplex_line {
 // Switch
 object switch:671692 {
 	phases "ABCN";
-	name 671-692;
+	name swt_671-692;
 	from node:671;
 	to node:692;
 	status CLOSED;
@@ -1471,11 +1564,25 @@ object transformer_configuration {
 	impedance 0.006+0.0136j;
 }
 
+object switch { // CIM LoadBreakSwitch
+  name "swt_j1";
+  from "cap1";
+  to "node_675";
+  phases ABC;
+  status CLOSED;
+  continuous_rating_A 400.00;
+  continuous_rating_B 400.00;
+  continuous_rating_C 400.00;
+  emergency_rating_A 600.00;
+  emergency_rating_B 600.00;
+  emergency_rating_C 600.00;
+}
+
 object capacitor {
 	phases ABCN;
-	name CAP1;
+	name cap_cap1;
 	pt_phase ABCN;
-	parent 675;
+	parent cap1;
 	phases_connected ABCN;
 	control VOLT;
 	voltage_set_high 2500.0;
@@ -1492,11 +1599,25 @@ object capacitor {
 	nominal_voltage 2401.7771;	
 }
 
+object switch { // CIM LoadBreakSwitch
+  name "swt_j2";
+  from "cap2";
+  to "node_675";
+  phases ABC;
+  status CLOSED;
+  continuous_rating_A 400.00;
+  continuous_rating_B 400.00;
+  continuous_rating_C 400.00;
+  emergency_rating_A 600.00;
+  emergency_rating_B 600.00;
+  emergency_rating_C 600.00;
+}
+
 object capacitor {
 	phases ABCN;
-	name CAP2;
+	name cap_cap2;
 	pt_phase ABCN;
-	parent 675;
+	parent cap2;
 	phases_connected ABCN;
 	control VOLT;
 	voltage_set_high 2600.0;
@@ -1512,7 +1633,21 @@ object capacitor {
 	switchC CLOSED;
 	nominal_voltage 2401.7771;
 }
-  
+
+object switch { // CIM LoadBreakSwitch
+  name "swt_trunk";
+  from "sourcebus";
+  to "rootbus";
+  phases ABC;
+  status CLOSED;
+  continuous_rating_A 400.00;
+  continuous_rating_B 400.00;
+  continuous_rating_C 400.00;
+  emergency_rating_A 600.00;
+  emergency_rating_B 600.00;
+  emergency_rating_C 600.00;
+}
+
 // Regulator
 object regulator_configuration:6506321 {
 	connect_type WYE_WYE;
@@ -1530,10 +1665,11 @@ object regulator_configuration:6506321 {
 }
   
 object regulator:650630 {
+    name "reg_vreg1";
 	phases "ABCN";
 	from node:650;
 	to node:630;
-	sense_node 671;
+	sense_node node_671;
 	configuration regulator_configuration:6506321;
 }
 
@@ -1558,23 +1694,42 @@ object house:..4 {
 	};
 }
 
-object triplex_load {
-	phases "CS";
-	name tl_house_1;
-	constant_power_12 0.0+0.0j;
-	nominal_voltage 120.0;
+object triplex_node {
+  name "tl_house_1";
+  phases CS;
+  nominal_voltage 120.09;
 }
 
 object triplex_load {
 	phases "CS";
-	name tl_house_16;
+	name "ld_tl_house_1_240v";
+    parent "tl_house_1";
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
 
+object triplex_node {
+  name "tl_house_16";
+  phases CS;
+  nominal_voltage 120.09;
+}
 object triplex_load {
-	phases "CS";
-	name tl_house_31;
+  name "ld_tl_house_16_240v";
+  parent "tl_house_16";
+  phases CS;
+	constant_power_12 0.0+0.0j;
+	nominal_voltage 120.0;
+}
+
+object triplex_node {
+  name "tl_house_31";
+  phases CS;
+  nominal_voltage 120.09;
+}
+object triplex_load {
+  name "ld_tl_house_31_240v";
+  parent "tl_house_31";
+  phases CS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
@@ -1600,23 +1755,42 @@ object house:..4 {
 	};
 }
 
-object triplex_load {
-	phases "AS";
-	name tl_house_2;
-	constant_power_12 0.0+0.0j;
-	nominal_voltage 120.0;
+object triplex_node {
+  name "tl_house_2";
+  phases AS;
+  nominal_voltage 120.09;
 }
 
 object triplex_load {
 	phases "AS";
-	name tl_house_17;
+	name "ld_tl_house_2_240v";
+    parent "tl_house_2";
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
 
+object triplex_node {
+  name "tl_house_17";
+  phases AS;
+  nominal_voltage 120.09;
+}
 object triplex_load {
-	phases "AS";
-	name tl_house_32;
+  name "ld_tl_house_17_240v";
+  parent "tl_house_17";
+  phases AS;
+	constant_power_12 0.0+0.0j;
+	nominal_voltage 120.0;
+}
+
+object triplex_node {
+  name "tl_house_32";
+  phases AS;
+  nominal_voltage 120.09;
+}
+object triplex_load {
+  name "ld_tl_house_32_240v";
+  parent "tl_house_32";
+  phases AS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
@@ -1642,23 +1816,42 @@ object house:..4 {
 	};
 }
 
+object triplex_node {
+    name "tl_house_3";
+    phases BS;
+    nominal_voltage 120.09;
+}
+
 object triplex_load {
-	phases "BS";
-	name tl_house_3;
+    name "ld_tl_house_3_240v";
+    parent "tl_house_3";
+    phases BS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
 
+object triplex_node {
+  name "tl_house_18";
+  phases BS;
+  nominal_voltage 120.09;
+}
 object triplex_load {
-	phases "BS";
-	name tl_house_18;
+  name "ld_tl_house_18_240v";
+  parent "tl_house_18";
+  phases BS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
 
+object triplex_node {
+  name "tl_house_33";
+  phases BS;
+  nominal_voltage 120.09;
+}
 object triplex_load {
-	phases "BS";
-	name tl_house_33;
+  name "ld_tl_house_33_240v";
+  parent "tl_house_33";
+  phases BS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
@@ -1684,23 +1877,42 @@ object house:..4 {
 	};
 }
 
+object triplex_node {
+  name "tl_house_4";
+  phases CS;
+  nominal_voltage 120.09;
+}
+
 object triplex_load {
-	phases "CS";
-	name tl_house_4;
+  name "ld_tl_house_4_240v";
+  parent "tl_house_4";
+  phases CS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
 
+object triplex_node {
+  name "tl_house_19";
+  phases CS;
+  nominal_voltage 120.09;
+}
 object triplex_load {
-	phases "CS";
-	name tl_house_19;
+  name "ld_tl_house_19_240v";
+  parent "tl_house_19";
+  phases CS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
 
+object triplex_node {
+  name "tl_house_34";
+  phases CS;
+  nominal_voltage 120.09;
+}
 object triplex_load {
-	phases "CS";
-	name tl_house_34;
+  name "ld_tl_house_34_240v";
+  parent "tl_house_34";
+  phases CS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
@@ -1726,23 +1938,42 @@ object house:..4 {
 	};
 }
 
+object triplex_node {
+  name "tl_house_5";
+  phases BS;
+  nominal_voltage 120.09;
+}
+
 object triplex_load {
-	phases "BS";
-	name tl_house_5;
+  name "ld_tl_house_5_240v";
+  parent "tl_house_5";
+  phases BS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
 
+object triplex_node {
+  name "tl_house_20";
+  phases BS;
+  nominal_voltage 120.09;
+}
 object triplex_load {
-	phases "BS";
-	name tl_house_20;
+  name "ld_tl_house_20_240v";
+  parent "tl_house_20";
+  phases BS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
 
+object triplex_node {
+  name "tl_house_35";
+  phases BS;
+  nominal_voltage 120.09;
+}
 object triplex_load {
-	phases "BS";
-	name tl_house_35;
+  name "ld_tl_house_35_240v";
+  parent "tl_house_35";
+  phases BS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
@@ -1768,23 +1999,42 @@ object house:..4 {
 	};
 }
 
+object triplex_node {
+  name "tl_house_6";
+  phases CS;
+  nominal_voltage 120.09;
+}
+
 object triplex_load {
-	phases "CS";
-	name tl_house_6;
+  name "ld_tl_house_6_240v";
+  parent "tl_house_6";
+  phases CS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
 
+object triplex_node {
+  name "tl_house_21";
+  phases CS;
+  nominal_voltage 120.09;
+}
 object triplex_load {
-	phases "CS";
-	name tl_house_21;
+  name "ld_tl_house_21_240v";
+  parent "tl_house_21";
+  phases CS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
 
+object triplex_node {
+  name "tl_house_36";
+  phases CS;
+  nominal_voltage 120.09;
+}
 object triplex_load {
-	phases "CS";
-	name tl_house_36;
+  name "ld_tl_house_36_240v";
+  parent "tl_house_36";
+  phases CS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
@@ -1810,23 +2060,42 @@ object house:..4 {
 	};
 }
 
-object triplex_load {
-	phases "BS";
-	name tl_house_7;
-	constant_power_12 0.0+0.0j;
-	nominal_voltage 120.0;
+object triplex_node {
+  name "tl_house_7";
+  phases BS;
+  nominal_voltage 120.09;
 }
 
 object triplex_load {
 	phases "BS";
-	name tl_house_22;
+	name "ld_tl_house_7_240v";
+    parent "tl_house_7";
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
 
+object triplex_node {
+  name "tl_house_22";
+  phases BS;
+  nominal_voltage 120.09;
+}
 object triplex_load {
-	phases "BS";
-	name tl_house_37;
+  name "ld_tl_house_22_240v";
+  parent "tl_house_22";
+  phases BS;
+	constant_power_12 0.0+0.0j;
+	nominal_voltage 120.0;
+}
+
+object triplex_node {
+  name "tl_house_37";
+  phases BS;
+  nominal_voltage 120.09;
+}
+object triplex_load {
+  name "ld_tl_house_37_240v";
+  parent "tl_house_37";
+  phases BS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
@@ -1852,23 +2121,44 @@ object house:..4 {
 	};
 }
 
+object triplex_node {
+  name "tl_house_8";
+  phases CS;
+  nominal_voltage 120.09;
+}
+
 object triplex_load {
-	phases "CS";
-	name tl_house_8;
+  name "ld_tl_house_8_240v";
+  parent "tl_house_8";
+  phases CS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
 
-object triplex_load {
-	phases "CS";
-	name tl_house_23;
-	constant_power_12 0.0+0.0j;
-	nominal_voltage 120.0;
+object triplex_node {
+  name "tl_house_23";
+  phases CS;
+  nominal_voltage 120.0;
 }
 
 object triplex_load {
 	phases "CS";
-	name tl_house_38;
+	name ld_tl_house_23_240v;
+    parent tl_house_23;
+	constant_power_12 0.0+0.0j;
+	nominal_voltage 120.0;
+}
+
+object triplex_node {
+  name "tl_house_38";
+  phases CS;
+  nominal_voltage 120.09;
+}
+
+object triplex_load {
+	phases "CS";
+	name ld_tl_house_38_240v;
+    parent tl_house_38;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
@@ -1894,23 +2184,42 @@ object house:..4 {
 	};
 }
 
+object triplex_node {
+  name "tl_house_9";
+  phases AS;
+  nominal_voltage 120.09;
+}
+
 object triplex_load {
-	phases "AS";
-	name tl_house_9;
+  name "ld_tl_house_9_240v";
+  parent "tl_house_9";
+  phases AS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
 
+object triplex_node {
+  name "tl_house_24";
+  phases AS;
+  nominal_voltage 120.09;
+}
 object triplex_load {
-	phases "AS";
-	name tl_house_24;
+  name "ld_tl_house_24_240v";
+  parent "tl_house_24";
+  phases AS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
 
+object triplex_node {
+  name "tl_house_39";
+  phases AS;
+  nominal_voltage 120.09;
+}
 object triplex_load {
-	phases "AS";
-	name tl_house_39;
+  name "ld_tl_house_39_240v";
+  parent "tl_house_39";
+  phases AS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
@@ -1936,23 +2245,42 @@ object house:..4 {
 	};
 }
 
+object triplex_node {
+  name "tl_house_10";
+  phases AS;
+  nominal_voltage 120.09;
+}
+
 object triplex_load {
-	phases "AS";
-	name tl_house_10;
+  name "ld_tl_house_10_240v";
+  parent "tl_house_10";
+    phases AS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
 
+object triplex_node {
+  name "tl_house_25";
+  phases AS;
+  nominal_voltage 120.09;
+}
 object triplex_load {
-	phases "AS";
-	name tl_house_25;
+  name "ld_tl_house_25_240v";
+  parent "tl_house_25";
+  phases AS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
 
+object triplex_node {
+  name "tl_house_40";
+  phases AS;
+  nominal_voltage 120.09;
+}
 object triplex_load {
-	phases "AS";
-	name tl_house_40;
+  name "ld_tl_house_40_240v";
+  parent "tl_house_40";
+  phases AS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
@@ -1978,16 +2306,29 @@ object house:..4 {
 	};
 }
 
+object triplex_node {
+  name "tl_house_11";
+  phases BS;
+  nominal_voltage 120.09;
+}
+
 object triplex_load {
-	phases "BS";
-	name tl_house_11;
+  name "ld_tl_house_11_240v";
+  parent "tl_house_11";
+  phases BS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
 
+object triplex_node {
+  name "tl_house_26";
+  phases BS;
+  nominal_voltage 120.09;
+}
 object triplex_load {
-	phases "BS";
-	name tl_house_26;
+  name "ld_tl_house_26_240v";
+  parent "tl_house_26";
+  phases BS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
@@ -2013,16 +2354,29 @@ object house:..4 {
 	};
 }
 
+object triplex_node {
+  name "tl_house_12";
+  phases CS;
+  nominal_voltage 120.09;
+}
+
 object triplex_load {
-	phases "CS";
-	name tl_house_12;
+  name "ld_tl_house_12_240v";
+  parent "tl_house_12";
+  phases CS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
 
+object triplex_node {
+  name "tl_house_27";
+  phases CS;
+  nominal_voltage 120.09;
+}
 object triplex_load {
-	phases "CS";
-	name tl_house_27;
+  name "ld_tl_house_27_240v";
+  parent "tl_house_27";
+  phases CS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
@@ -2048,16 +2402,29 @@ object house:..4 {
 	};
 }
 
+object triplex_node {
+  name "tl_house_13";
+  phases AS;
+  nominal_voltage 120.09;
+}
+
 object triplex_load {
-	phases "AS";
-	name tl_house_13;
+  name "ld_tl_house_13_240v";
+  parent "tl_house_13";
+  phases AS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
 
+object triplex_node {
+  name "tl_house_28";
+  phases AS;
+  nominal_voltage 120.09;
+}
 object triplex_load {
-	phases "AS";
-	name tl_house_28;
+  name "ld_tl_house_28_240v";
+  parent "tl_house_28";
+  phases AS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
@@ -2083,16 +2450,28 @@ object house:..4 {
 	};
 }
 
+object triplex_node {
+  name "tl_house_14";
+  phases BS;
+  nominal_voltage 120.09;
+}
 object triplex_load {
-	phases "BS";
-	name tl_house_14;
+  name "ld_tl_house_14_240v";
+  parent "tl_house_14";
+  phases BS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
 
+object triplex_node {
+  name "tl_house_29";
+  phases BS;
+  nominal_voltage 120.09;
+}
 object triplex_load {
-	phases "BS";
-	name tl_house_29;
+  name "ld_tl_house_29_240v";
+  parent "tl_house_29";
+  phases BS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
@@ -2118,16 +2497,28 @@ object house:..4 {
 	};
 }
 
+object triplex_node {
+  name "tl_house_15";
+  phases CS;
+  nominal_voltage 120.09;
+}
 object triplex_load {
-	phases "CS";
-	name tl_house_15;
+  name "ld_tl_house_15_240v";
+  parent "tl_house_15";
+  phases CS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
 
+object triplex_node {
+  name "tl_house_30";
+  phases CS;
+  nominal_voltage 120.09;
+}
 object triplex_load {
-	phases "CS";
-	name tl_house_30;
+  name "ld_tl_house_30_240v";
+  parent "tl_house_30";
+  phases CS;
 	constant_power_12 0.0+0.0j;
 	nominal_voltage 120.0;
 }
