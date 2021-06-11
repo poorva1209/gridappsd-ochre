@@ -9,6 +9,8 @@ from constants import *
 
 
 def make_helics_federate(name, broker_addr=None, fed_type='value', **kwargs):
+    if broker_addr != None and kwargs.get('simulation_id',None) != None:
+        fedinitstring = "--federates=1 --broker_address=tcp;//{}".format(kwargs.get('simulation_id',"")
     if broker_addr is None or broker_addr == '0.0.0.0:4545':
         fedinitstring = "--federates=1"
     else:

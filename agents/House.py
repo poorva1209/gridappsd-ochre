@@ -166,6 +166,11 @@ class House(Agent):
 if __name__ == "__main__":
     import sys
 
+    if len(sys.argv) >= 4:
+        house_id = str(sys.argv[1])
+        addr = str(sys.argv[2])
+        gridappsd_sim_id = str(sys.argv[3])
+        agent = House(house_id, broker_addr=addr, fed_type='combo', simulation_id=gridappsd_sim_id)
     if len(sys.argv) >= 3:
         house_id = str(sys.argv[1])
         addr = str(sys.argv[2])
