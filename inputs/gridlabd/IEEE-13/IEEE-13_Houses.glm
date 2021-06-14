@@ -5,6 +5,7 @@
 #set randomseed=1;
 #set relax_naming_rules=1;
 #define stylesheet=http://gridlab-d.svn.sourceforge.net/viewvc/gridlab-d/trunk/core/gridlabd-2_0
+#define VSOURCE=66395.28095680696
 
 clock {
 	timezone EST+5EDT;
