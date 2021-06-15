@@ -2,6 +2,8 @@
     "name":"Feeder",
     "loglevel":3,
     "coreType":"zmq",
+	"coreName": "Feeder_core",
+	"broker": "127.0.0.1:52577",
     "period":1.0,
     "offset":0,
     "uninterruptible":false,
@@ -10,483 +12,483 @@
             "global":false,
             "key":"House_n1/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_1", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_1\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n2/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_2", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_2\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n3/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_3", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_3\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n4/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_4", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_4\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n5/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_5", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_5\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n6/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_6", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_6\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n7/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_7", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_7\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n8/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_8", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_8\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n9/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_9", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_9\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n10/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_10", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_10\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n11/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_11", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_11\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n12/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_12", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_12\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n13/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_13", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_13\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n14/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_14", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_14\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n15/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_15", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_15\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n16/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_16", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_16\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n17/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_17", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_17\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n18/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_18", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_18\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n19/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_19", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_19\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n20/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_20", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_20\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n21/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_21", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_21\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n22/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_22", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_22\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n23/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_23", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_23\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n24/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_24", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_24\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n25/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_25", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_25\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n26/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_26", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_26\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n27/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_27", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_27\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n28/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_28", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_28\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n29/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_29", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_29\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n30/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_30", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_30\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n31/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_31", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_31\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n32/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_32", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_32\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n33/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_33", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_33\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n34/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_34", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_34\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n35/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_35", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_35\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n36/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_36", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_36\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n37/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_37", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_37\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n38/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_38", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_38\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n39/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_39", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_39\", \"property\" : \"voltage_12\"}"
         },
         {
             "global":false,
             "key":"House_n40/voltage",
             "type":"complex",
-            "info":'{"object" : "tl_house_40", "property" : "voltage_12"}'
+            "info":"{\"object\" : \"tl_house_40\", \"property\" : \"voltage_12\"}"
         }
     ],
     "subscriptions":[
         {
             "key":"House_n1/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_1_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_1_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n2/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_2_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_2_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n3/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_3_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_3_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n4/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_4_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_4_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n5/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_5_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_5_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n6/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_6_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_6_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n7/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_7_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_7_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n8/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_8_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_8_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n9/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_9_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_9_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n10/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_10_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_10_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n11/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_11_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_11_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n12/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_12_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_12_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n13/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_13_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_13_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n14/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_14_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_14_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n15/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_15_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_15_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n16/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_16_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_16_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n17/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_17_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_17_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n18/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_18_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_18_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n19/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_19_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_19_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n20/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_20_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_20_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n21/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_21_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_21_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n22/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_22_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_22_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n23/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_23_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_23_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n24/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_24_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_24_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n25/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_25_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_25_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n26/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_26_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_26_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n27/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_27_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_27_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n28/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_28_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_28_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n29/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_29_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_29_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n30/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_30_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_30_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n31/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_31_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_31_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n32/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_32_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_32_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n33/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_33_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_33_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n34/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_34_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_34_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n35/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_35_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_35_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n36/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_36_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_36_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n37/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_37_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_37_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n38/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_38_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_38_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n39/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_39_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_39_240v\", \"property\" : \"constant_power_12\"}"
         },
         {
             "key":"House_n40/load_to_feeder",
             "type":"complex",
-            "required":true,
-            "info":'{"object" : "ld_tl_house_40_240v", "property" : "constant_power_12"}'
+            "required":false,
+            "info":"{\"object\" : \"ld_tl_house_40_240v\", \"property\" : \"constant_power_12\"}"
         }
     ],
     "endpoints": [
@@ -494,14 +496,14 @@
             "name": "helics_input",
             "global": false,
             "type": "string",
-            "info": '{"message_type": "JSON"}'
+            "info": "{\"message_type\": \"JSON\"}"
         },
         {
             "name": "helics_output",
             "global": false,
             "type": "string",
-            "destination": f"HELICS_GOSS_Bridge_523621484/helics_output",
-            "info": '{"message_type": "JSON","publication_info": {"node_684": ["voltage_C","voltage_A"],"ld_tl_house_23_240v": ["indiv_measured_power_1","indiv_measured_power_2"],"node_680": ["voltage_B","voltage_C","voltage_A"],"ld_tl_house_38_240v": ["indiv_measured_power_1","indiv_measured_power_2"],"ld_tl_house_7_240v": ["indiv_measured_power_2","indiv_measured_power_1"],"ld_tl_house_6_240v": ["indiv_measured_power_2","indiv_measured_power_1"],"swt_j1": ["current_in_C","status","current_in_B","current_in_A"],"ld_tl_house_10_240v": ["indiv_measured_power_2","indiv_measured_power_1"],"swt_j2": ["status","current_in_B","current_in_C","current_in_A"],"rootbus": ["voltage_B","voltage_A","voltage_C"],"ld_tl_house_40_240v": ["indiv_measured_power_2","indiv_measured_power_1"],"ld_tl_house_24_240v": ["indiv_measured_power_2","indiv_measured_power_1"],"line_684-611": ["power_in_C"],"ld_tl_house_5_240v": ["indiv_measured_power_2","indiv_measured_power_1"],"ld_tl_house_8_240v": ["indiv_measured_power_2","indiv_measured_power_1"],"node_675": ["voltage_B","voltage_C","voltage_A"],"tpx_object_110": ["power_in_B","power_in_A"],"ld_tl_house_39_240v": ["indiv_measured_power_1","indiv_measured_power_2"],"tpx_object_111": ["power_in_B","power_in_A"],"tpx_object_112": ["power_in_B","power_in_A"],"tpx_object_113": ["power_in_A","power_in_B"],"ld_tl_house_22_240v": ["indiv_measured_power_2","indiv_measured_power_1"],"node_671": ["voltage_C","voltage_A","voltage_B"],"tpx_object_114": ["power_in_B","power_in_A"],"ld_tl_house_25_240v": ["indiv_measured_power_2","indiv_measured_power_1"],"tpx_object_115": ["power_in_A","power_in_B"],"tpx_object_116": ["power_in_A","power_in_B"],"tpx_object_117": ["power_in_A","power_in_B"],"tpx_object_118": ["power_in_A","power_in_B"],"tpx_object_119": ["power_in_A","power_in_B"],"ld_tl_house_36_240v": ["indiv_measured_power_1","indiv_measured_power_2"],"swt_trunk": ["status","current_in_A","current_in_B","current_in_C"],"cap_cap1": ["voltage_A","switchB","switchC","shunt_C","voltage_C","switchA","voltage_B","shunt_A","shunt_B"],"cap_cap2": ["voltage_B","voltage_C","switchB","shunt_C","shunt_B","voltage_A","shunt_A","switchC","switchA"],"ld_tl_house_11_240v": ["indiv_measured_power_1","indiv_measured_power_2"],"line_630-632": ["power_in_A","power_in_C","power_in_B"],"tl_house_4": ["voltage_1","voltage_2"],"sourcebus": ["voltage_A","voltage_B","voltage_C"],"tl_house_5": ["voltage_1","voltage_2"],"tl_house_2": ["voltage_1","voltage_2"],"tpx_object_120": ["power_in_B","power_in_A"],"tpx_object_121": ["power_in_B","power_in_A"],"tl_house_3": ["voltage_2","voltage_1"],"tpx_object_122": ["power_in_A","power_in_B"],"ld_tl_house_18_240v": ["indiv_measured_power_2","indiv_measured_power_1"],"tl_house_1": ["voltage_1","voltage_2"],"tpx_object_123": ["power_in_B","power_in_A"],"tpx_object_124": ["power_in_B","power_in_A"],"tpx_object_125": ["power_in_B","power_in_A"], "tpx_object_126": ["power_in_B","power_in_A"],"tpx_object_127": ["power_in_B","power_in_A"],"tpx_object_128": ["power_in_A","power_in_B"],"tpx_object_129": ["power_in_A","power_in_B"],"ld_tl_house_4_240v": ["indiv_measured_power_2","indiv_measured_power_1"],"ld_tl_house_12_240v": ["indiv_measured_power_1","indiv_measured_power_2"],"ld_tl_house_21_240v": ["indiv_measured_power_1","indiv_measured_power_2"],"line_632-6321": ["power_in_A","power_in_B","power_in_C"],"ld_tl_house_27_240v": ["indiv_measured_power_2","indiv_measured_power_1"],"line_632-633": ["power_in_B","power_in_A","power_in_C"],"trip_node15": ["voltage_1","voltage_2"],"tl_house_8": ["voltage_1","voltage_2"],"tl_house_9": ["voltage_2","voltage_1"],"tl_house_6": ["voltage_1","voltage_2"],"tl_house_7": ["voltage_2","voltage_1"],"node_650": ["voltage_B","voltage_A","voltage_C"],"tpx_object_130": ["power_in_B","power_in_A"],"tpx_object_131": ["power_in_B","power_in_A"],"node_652": ["voltage_A"],"tpx_object_132": ["power_in_A","power_in_B"],"tpx_object_133": ["power_in_A","power_in_B"],"tpx_object_134": ["power_in_A","power_in_B"],"tpx_object_135": ["power_in_B","power_in_A"],"tpx_object_136": ["power_in_A","power_in_B"],"tpx_object_137": ["power_in_A","power_in_B"],"tpx_object_138": ["power_in_B","power_in_A"],"tpx_object_139": ["power_in_A","power_in_B"],"ld_tl_house_31_240v": ["indiv_measured_power_2","indiv_measured_power_1"],"ld_tl_house_34_240v": ["indiv_measured_power_1","indiv_measured_power_2"],"ld_tl_house_37_240v": ["indiv_measured_power_2","indiv_measured_power_1"],"line_632-645": ["power_in_C","power_in_B"],"line_645-646": ["power_in_B","power_in_C"],"node_6321": ["voltage_B", "voltage_C","voltage_A"],"tpx_object_140": ["power_in_B","power_in_A"],"tpx_object_141": ["power_in_B","power_in_A"],"ld_tl_house_29_240v": ["indiv_measured_power_2","indiv_measured_power_1"],"ld_tl_house_15_240v": ["indiv_measured_power_2","indiv_measured_power_1"],"tpx_object_142": ["power_in_B","power_in_A"],"line_684-652": ["power_in_A"],"tpx_object_143": ["power_in_A","power_in_B"],"tpx_object_144": ["power_in_A","power_in_B"],"tpx_object_145": ["power_in_B","power_in_A"],"tpx_object_146": ["power_in_B", "power_in_A"],"tpx_object_147": ["power_in_B","power_in_A"],"tpx_object_148": ["power_in_B","power_in_A"],"ld_tl_house_1_240v": ["indiv_measured_power_2","indiv_measured_power_1"],"tpx_object_149": ["power_in_A","power_in_B"],"node_645": ["voltage_C","voltage_B"],"node_646": ["voltage_B","voltage_C"],"ld_tl_house_16_240v": ["indiv_measured_power_1","indiv_measured_power_2"],"tl_house_40": ["voltage_1","voltage_2"],"ld_tl_house_32_240v": ["indiv_measured_power_1","indiv_measured_power_2"],"ld_tl_house_30_240v": ["indiv_measured_power_2","indiv_measured_power_1"],"trip_node10": ["voltage_1","voltage_2"],"ld_tl_house_33_240v": ["indiv_measured_power_1","indiv_measured_power_2"],"node_630": ["voltage_C","voltage_B","voltage_A"],"trip_node13": ["voltage_1","voltage_2"],"line_671-684": ["power_in_A","power_in_C"], "trip_node14": ["voltage_2","voltage_1"], "ld_tl_house_2_240v": ["indiv_measured_power_1","indiv_measured_power_2"],"trip_node11": ["voltage_1","voltage_2"],"trip_node12": ["voltage_1","voltage_2"],"line_671-680": ["power_in_A","power_in_C","power_in_B"],"ld_tl_house_28_240v": ["indiv_measured_power_1","indiv_measured_power_2"],"node_632": ["voltage_C","voltage_B","voltage_A"],"node_633": ["voltage_C","voltage_B","voltage_A"],"tl_house_37": ["voltage_1","voltage_2"],"tl_house_38": ["voltage_1","voltage_2"],"tl_house_35": ["voltage_1","voltage_2"],"ld_tl_house_17_240v": ["indiv_measured_power_2","indiv_measured_power_1"],"tl_house_36": ["voltage_2","voltage_1"],"tl_house_39": ["voltage_2","voltage_1"],"ld_tl_house_14_240v": ["indiv_measured_power_2","indiv_measured_power_1"],"tl_house_30": ["voltage_1","voltage_2"],"tl_house_33": ["voltage_1","voltage_2"],"tl_house_34": ["voltage_1","voltage_2"],"tl_house_31": ["voltage_2","voltage_1"],"tl_house_32": ["voltage_2","voltage_1"],"ld_tl_house_26_240v": ["indiv_measured_power_1","indiv_measured_power_2"],"swt_671-692": ["current_in_B","status","current_in_C","current_in_A"],"xf_source_650": ["power_in_C","power_in_A","power_in_B"],"ld_tl_house_9_240v": ["indiv_measured_power_2","indiv_measured_power_1"],"line_692-675": ["power_in_B","power_in_C","power_in_A"],"ld_tl_house_20_240v": ["indiv_measured_power_2","indiv_measured_power_1"],"tl_house_26": ["voltage_1","voltage_2"],"tl_house_27": ["voltage_1","voltage_2"],"tl_house_24": ["voltage_1","voltage_2"],"tl_house_25": ["voltage_1","voltage_2"],"line_6321-671": ["power_in_A","power_in_B","power_in_C"],"ld_tl_house_3_240v": ["indiv_measured_power_2","indiv_measured_power_1"],"ld_tl_house_35_240v": ["indiv_measured_power_2","indiv_measured_power_1"],"tl_house_28": ["voltage_1","voltage_2"],"tl_house_29": ["voltage_1","voltage_2"],"ld_tl_house_19_240v": ["indiv_measured_power_1","indiv_measured_power_2"],"ld_tl_house_13_240v": ["indiv_measured_power_1","indiv_measured_power_2"],"tl_house_22": ["voltage_2","voltage_1"],"tl_house_23": ["voltage_1","voltage_2"],"tl_house_20": ["voltage_1","voltage_2"],"tl_house_21": ["voltage_2","voltage_1"],"trip_node1": ["voltage_2","voltage_1"],"trip_node2": ["voltage_2","voltage_1"],"trip_node3": ["voltage_1","voltage_2"],"node_692": ["voltage_B","voltage_A","voltage_C"],"trip_node8": ["voltage_1","voltage_2"],"trip_node9": ["voltage_2","voltage_1"],"reg_vreg1": ["tap_B","tap_C","tap_A"],"trip_node4": ["voltage_2","voltage_1"],"trip_node5": ["voltage_2","voltage_1"],"node_611": ["voltage_C"],"trip_node6": ["voltage_1","voltage_2"],"trip_node7": ["voltage_1","voltage_2"],"tl_house_15": ["voltage_1","voltage_2"],"tl_house_16": ["voltage_1","voltage_2"],"tl_house_13": ["voltage_1","voltage_2"],"tl_house_14": ["voltage_1","voltage_2"],"tl_house_19": ["voltage_2","voltage_1"],"tl_house_17": ["voltage_1","voltage_2"],"tl_house_18": ["voltage_2","voltage_1"],"tl_house_11": ["voltage_2","voltage_1"],"tl_house_12": ["voltage_1","voltage_2"], "tl_house_10": ["voltage_1","voltage_2"], "globals": ["clock"]}}'
+            "destination": "HELICS_GOSS_Bridge_523621484/helics_output",
+            "info": "{\"message_type\": \"JSON\",\"publication_info\": {\"node_684\": [\"voltage_C\",\"voltage_A\"],\"ld_tl_house_23_240v\": [\"indiv_measured_power_1\",\"indiv_measured_power_2\"],\"node_680\": [\"voltage_B\",\"voltage_C\",\"voltage_A\"],\"ld_tl_house_38_240v\": [\"indiv_measured_power_1\",\"indiv_measured_power_2\"],\"ld_tl_house_7_240v\": [\"indiv_measured_power_2\",\"indiv_measured_power_1\"],\"ld_tl_house_6_240v\": [\"indiv_measured_power_2\",\"indiv_measured_power_1\"],\"swt_j1\": [\"current_in_C\",\"status\",\"current_in_B\",\"current_in_A\"],\"ld_tl_house_10_240v\": [\"indiv_measured_power_2\",\"indiv_measured_power_1\"],\"swt_j2\": [\"status\",\"current_in_B\",\"current_in_C\",\"current_in_A\"],\"rootbus\": [\"voltage_B\",\"voltage_A\",\"voltage_C\"],\"ld_tl_house_40_240v\": [\"indiv_measured_power_2\",\"indiv_measured_power_1\"],\"ld_tl_house_24_240v\": [\"indiv_measured_power_2\",\"indiv_measured_power_1\"],\"line_684-611\": [\"power_in_C\"],\"ld_tl_house_5_240v\": [\"indiv_measured_power_2\",\"indiv_measured_power_1\"],\"ld_tl_house_8_240v\": [\"indiv_measured_power_2\",\"indiv_measured_power_1\"],\"node_675\": [\"voltage_A\",\"voltage_A\",\"voltage_A\"],\"tpx_object_110\": [\"power_in_B\",\"power_in_A\"],\"ld_tl_house_39_240v\": [\"indiv_measured_power_1\",\"indiv_measured_power_2\"],\"tpx_object_111\": [\"power_in_B\",\"power_in_A\"],\"tpx_object_112\": [\"power_in_B\",\"power_in_A\"],\"tpx_object_113\": [\"power_in_A\",\"power_in_B\"],\"ld_tl_house_22_240v\": [\"indiv_measured_power_2\",\"indiv_measured_power_1\"],\"node_671\": [\"voltage_A\",\"voltage_A\",\"voltage_A\"],\"tpx_object_114\": [\"power_in_B\",\"power_in_A\"],\"ld_tl_house_25_240v\": [\"indiv_measured_power_2\",\"indiv_measured_power_1\"],\"tpx_object_115\": [\"power_in_A\",\"power_in_B\"],\"tpx_object_116\": [\"power_in_A\",\"power_in_B\"],\"tpx_object_117\": [\"power_in_A\",\"power_in_B\"],\"tpx_object_118\": [\"power_in_A\",\"power_in_B\"],\"tpx_object_119\": [\"power_in_A\",\"power_in_B\"],\"ld_tl_house_36_240v\": [\"indiv_measured_power_1\",\"indiv_measured_power_2\"],\"swt_trunk\": [\"status\",\"current_in_A\",\"current_in_B\",\"current_in_C\"],\"cap_cap1\": [\"voltage_A\",\"switchB\",\"switchC\",\"shunt_C\",\"voltage_A\",\"switchA\",\"voltage_A\",\"shunt_A\",\"shunt_B\"],\"cap_cap2\": [\"voltage_A\",\"voltage_A\",\"switchB\",\"shunt_C\",\"shunt_B\",\"voltage_A\",\"shunt_A\",\"switchC\",\"switchA\"],\"ld_tl_house_11_240v\": [\"indiv_measured_power_1\",\"indiv_measured_power_2\"],\"line_630-632\": [\"power_in_A\",\"power_in_C\",\"power_in_B\"],\"tl_house_4\": [\"voltage_1\",\"voltage_2\"],\"sourcebus\": [\"voltage_A\",\"voltage_A\",\"voltage_A\"],\"tl_house_5\": [\"voltage_1\",\"voltage_2\"],\"tl_house_2\": [\"voltage_1\",\"voltage_2\"],\"tpx_object_120\": [\"power_in_B\",\"power_in_A\"],\"tpx_object_121\": [\"power_in_B\",\"power_in_A\"],\"tl_house_3\": [\"voltage_2\",\"voltage_1\"],\"tpx_object_122\": [\"power_in_A\",\"power_in_B\"],\"ld_tl_house_18_240v\": [\"indiv_measured_power_2\",\"indiv_measured_power_1\"],\"tl_house_1\": [\"voltage_1\",\"voltage_2\"],\"tpx_object_123\": [\"power_in_B\",\"power_in_A\"],\"tpx_object_124\": [\"power_in_B\",\"power_in_A\"],\"tpx_object_125\": [\"power_in_B\",\"power_in_A\"],\"tpx_object_126\": [\"power_in_B\",\"power_in_A\"],\"tpx_object_127\": [\"power_in_B\",\"power_in_A\"],\"tpx_object_128\": [\"power_in_A\",\"power_in_B\"],\"tpx_object_129\": [\"power_in_A\",\"power_in_B\"],\"ld_tl_house_4_240v\": [\"indiv_measured_power_2\",\"indiv_measured_power_1\"],\"ld_tl_house_12_240v\": [\"indiv_measured_power_1\",\"indiv_measured_power_2\"],\"ld_tl_house_21_240v\": [\"indiv_measured_power_1\",\"indiv_measured_power_2\"],\"line_632-6321\": [\"power_in_A\",\"power_in_B\",\"power_in_C\"],\"ld_tl_house_27_240v\": [\"indiv_measured_power_2\",\"indiv_measured_power_1\"],\"line_632-633\": [\"power_in_B\",\"power_in_A\",\"power_in_C\"],\"trip_node15\": [\"voltage_1\",\"voltage_2\"],\"tl_house_8\": [\"voltage_1\",\"voltage_2\"],\"tl_house_9\": [\"voltage_2\",\"voltage_1\"],\"tl_house_6\": [\"voltage_1\",\"voltage_2\"],\"tl_house_7\": [\"voltage_2\",\"voltage_1\"],\"node_650\": [\"voltage_A\",\"voltage_A\",\"voltage_A\"],\"tpx_object_130\": [\"power_in_B\",\"power_in_A\"],\"tpx_object_131\": [\"power_in_B\",\"power_in_A\"],\"node_652\": [\"voltage_A\"],\"tpx_object_132\": [\"power_in_A\",\"power_in_B\"],\"tpx_object_133\": [\"power_in_A\",\"power_in_B\"],\"tpx_object_134\": [\"power_in_A\",\"power_in_B\"],\"tpx_object_135\": [\"power_in_B\",\"power_in_A\"],\"tpx_object_136\": [\"power_in_A\",\"power_in_B\"],\"tpx_object_137\": [\"power_in_A\",\"power_in_B\"],\"tpx_object_138\": [\"power_in_B\",\"power_in_A\"],\"tpx_object_139\": [\"power_in_A\",\"power_in_B\"],\"ld_tl_house_31_240v\": [\"indiv_measured_power_2\",\"indiv_measured_power_1\"],\"ld_tl_house_34_240v\": [\"indiv_measured_power_1\",\"indiv_measured_power_2\"],\"ld_tl_house_37_240v\": [\"indiv_measured_power_2\",\"indiv_measured_power_1\"],\"line_632-645\": [\"power_in_C\",\"power_in_B\"],\"line_645-646\": [\"power_in_B\",\"power_in_C\"],\"node_6321\": [\"voltage_A\", \"voltage_A\",\"voltage_A\"],\"tpx_object_140\": [\"power_in_B\",\"power_in_A\"],\"tpx_object_141\": [\"power_in_B\",\"power_in_A\"],\"ld_tl_house_29_240v\": [\"indiv_measured_power_2\",\"indiv_measured_power_1\"],\"ld_tl_house_15_240v\": [\"indiv_measured_power_2\",\"indiv_measured_power_1\"],\"tpx_object_142\": [\"power_in_B\",\"power_in_A\"],\"line_684-652\": [\"power_in_A\"],\"tpx_object_143\": [\"power_in_A\",\"power_in_B\"],\"tpx_object_144\": [\"power_in_A\",\"power_in_B\"],\"tpx_object_145\": [\"power_in_B\",\"power_in_A\"],\"tpx_object_146\": [\"power_in_B\", \"power_in_A\"],\"tpx_object_147\": [\"power_in_B\",\"power_in_A\"],\"tpx_object_148\": [\"power_in_B\",\"power_in_A\"],\"ld_tl_house_1_240v\": [\"indiv_measured_power_2\",\"indiv_measured_power_1\"],\"tpx_object_149\": [\"power_in_A\",\"power_in_B\"],\"node_645\": [\"voltage_A\",\"voltage_A\"],\"node_646\": [\"voltage_A\",\"voltage_A\"],\"ld_tl_house_16_240v\": [\"indiv_measured_power_1\",\"indiv_measured_power_2\"],\"tl_house_40\": [\"voltage_1\",\"voltage_2\"],\"ld_tl_house_32_240v\": [\"indiv_measured_power_1\",\"indiv_measured_power_2\"],\"ld_tl_house_30_240v\": [\"indiv_measured_power_2\",\"indiv_measured_power_1\"],\"trip_node10\": [\"voltage_1\",\"voltage_2\"],\"ld_tl_house_33_240v\": [\"indiv_measured_power_1\",\"indiv_measured_power_2\"],\"node_630\": [\"voltage_A\",\"voltage_A\",\"voltage_A\"],\"trip_node13\": [\"voltage_1\",\"voltage_2\"],\"line_671-684\": [\"power_in_A\",\"power_in_C\"],\"trip_node14\": [\"voltage_2\",\"voltage_1\"],\"ld_tl_house_2_240v\": [\"indiv_measured_power_1\",\"indiv_measured_power_2\"],\"trip_node11\": [\"voltage_1\",\"voltage_2\"],\"trip_node12\": [\"voltage_1\",\"voltage_2\"],\"line_671-680\": [\"power_in_A\",\"power_in_C\",\"power_in_B\"],\"ld_tl_house_28_240v\": [\"indiv_measured_power_1\",\"indiv_measured_power_2\"],\"node_632\": [\"voltage_A\",\"voltage_A\",\"voltage_A\"],\"node_633\": [\"voltage_A\",\"voltage_A\",\"voltage_A\"],\"tl_house_37\": [\"voltage_1\",\"voltage_2\"],\"tl_house_38\": [\"voltage_1\",\"voltage_2\"],\"tl_house_35\": [\"voltage_1\",\"voltage_2\"],\"ld_tl_house_17_240v\": [\"indiv_measured_power_2\",\"indiv_measured_power_1\"],\"tl_house_36\": [\"voltage_2\",\"voltage_1\"],\"tl_house_39\": [\"voltage_2\",\"voltage_1\"],\"ld_tl_house_14_240v\": [\"indiv_measured_power_2\",\"indiv_measured_power_1\"],\"tl_house_30\": [\"voltage_1\",\"voltage_2\"],\"tl_house_33\": [\"voltage_1\",\"voltage_2\"],\"tl_house_34\": [\"voltage_1\",\"voltage_2\"],\"tl_house_31\": [\"voltage_2\",\"voltage_1\"],\"tl_house_32\": [\"voltage_2\",\"voltage_1\"],\"ld_tl_house_26_240v\": [\"indiv_measured_power_1\",\"indiv_measured_power_2\"],\"swt_671-692\": [\"current_in_B\",\"status\",\"current_in_C\",\"current_in_A\"],\"xf_source_650\": [\"power_in_C\",\"power_in_A\",\"power_in_B\"],\"ld_tl_house_9_240v\": [\"indiv_measured_power_2\",\"indiv_measured_power_1\"],\"line_692-675\": [\"power_in_B\",\"power_in_C\",\"power_in_A\"],\"ld_tl_house_20_240v\": [\"indiv_measured_power_2\",\"indiv_measured_power_1\"],\"tl_house_26\": [\"voltage_1\",\"voltage_2\"],\"tl_house_27\": [\"voltage_1\",\"voltage_2\"],\"tl_house_24\": [\"voltage_1\",\"voltage_2\"],\"tl_house_25\": [\"voltage_1\",\"voltage_2\"],\"line_6321-671\": [\"power_in_A\",\"power_in_B\",\"power_in_C\"],\"ld_tl_house_3_240v\": [\"indiv_measured_power_2\",\"indiv_measured_power_1\"],\"ld_tl_house_35_240v\": [\"indiv_measured_power_2\",\"indiv_measured_power_1\"],\"tl_house_28\": [\"voltage_1\",\"voltage_2\"],\"tl_house_29\": [\"voltage_1\",\"voltage_2\"],\"ld_tl_house_19_240v\": [\"indiv_measured_power_1\",\"indiv_measured_power_2\"],\"ld_tl_house_13_240v\": [\"indiv_measured_power_1\",\"indiv_measured_power_2\"],\"tl_house_22\": [\"voltage_2\",\"voltage_1\"],\"tl_house_23\": [\"voltage_1\",\"voltage_2\"],\"tl_house_20\": [\"voltage_1\",\"voltage_2\"],\"tl_house_21\": [\"voltage_2\",\"voltage_1\"],\"trip_node1\": [\"voltage_2\",\"voltage_1\"],\"trip_node2\": [\"voltage_2\",\"voltage_1\"],\"trip_node3\": [\"voltage_1\",\"voltage_2\"],\"node_692\": [\"voltage_A\",\"voltage_A\",\"voltage_A\"],\"trip_node8\": [\"voltage_1\",\"voltage_2\"],\"trip_node9\": [\"voltage_2\",\"voltage_1\"],\"reg_vreg1\": [\"tap_B\",\"tap_C\",\"tap_A\"],\"trip_node4\": [\"voltage_2\",\"voltage_1\"],\"trip_node5\": [\"voltage_2\",\"voltage_1\"],\"node_611\": [\"voltage_A\"],\"trip_node6\": [\"voltage_1\",\"voltage_2\"],\"trip_node7\": [\"voltage_1\",\"voltage_2\"],\"tl_house_15\": [\"voltage_1\",\"voltage_2\"],\"tl_house_16\": [\"voltage_1\",\"voltage_2\"],\"tl_house_13\": [\"voltage_1\",\"voltage_2\"],\"tl_house_14\": [\"voltage_1\",\"voltage_2\"],\"tl_house_19\": [\"voltage_2\",\"voltage_1\"],\"tl_house_17\": [\"voltage_1\",\"voltage_2\"],\"tl_house_18\": [\"voltage_2\",\"voltage_1\"],\"tl_house_11\": [\"voltage_2\",\"voltage_1\"],\"tl_house_12\": [\"voltage_1\",\"voltage_2\"],\"tl_house_10\": [\"voltage_1\",\"voltage_2\"],\"globals\": [\"clock\"]}}"
         }
     ]
 }

@@ -5,17 +5,18 @@
 #set randomseed=1;
 #set relax_naming_rules=1;
 #define stylesheet=http://gridlab-d.svn.sourceforge.net/viewvc/gridlab-d/trunk/core/gridlabd-2_0
+#define VSOURCE=66395.28095680696
 
 clock {
 	timezone EST+5EDT;
     starttime '2018-01-01 0:00:00';
-    stoptime '2018-01-02 0:00:00';
+    stoptime '2018-01-01 0:02:00';
 }
 
 module tape;
 //module generators;
 module powerflow{
-	solver_method FBS;
+	solver_method NR;
 	default_maximum_voltage_error 1e-5;
 	line_limits FALSE;
 };
@@ -879,7 +880,7 @@ object triplex_line {
 	phases CS; 
 	from trip_node1; 
 	to trip_meter1; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
 
@@ -889,7 +890,7 @@ object triplex_line {
 	phases AS; 
 	from trip_node2; 
 	to trip_meter2; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
 
@@ -898,7 +899,7 @@ object triplex_line {
 	phases BS; 
 	from trip_node3; 
 	to trip_meter3; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
 
@@ -907,7 +908,7 @@ object triplex_line {
 	phases CS; 
 	from trip_node4; 
 	to trip_meter4; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
 
@@ -916,7 +917,7 @@ object triplex_line {
 	phases BS; 
 	from trip_node5; 
 	to trip_meter5; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
 
@@ -925,7 +926,7 @@ object triplex_line {
 	phases CS; 
 	from trip_node6; 
 	to trip_meter6; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
 
@@ -934,7 +935,7 @@ object triplex_line {
 	phases BS; 
 	from trip_node7; 
 	to trip_meter7; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
 
@@ -943,7 +944,7 @@ object triplex_line {
 	phases CS; 
 	from trip_node8; 
 	to trip_meter8; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
 
@@ -952,7 +953,7 @@ object triplex_line {
 	phases AS; 
 	from trip_node9; 
 	to trip_meter9; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
 
@@ -961,7 +962,7 @@ object triplex_line {
 	phases AS; 
 	from trip_node10; 
 	to trip_meter10; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
 
@@ -970,7 +971,7 @@ object triplex_line {
 	phases BS; 
 	from trip_node11; 
 	to trip_meter11; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
 
@@ -979,7 +980,7 @@ object triplex_line {
 	phases CS; 
 	from trip_node12; 
 	to trip_meter12; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
 
@@ -988,7 +989,7 @@ object triplex_line {
 	phases AS; 
 	from trip_node13; 
 	to trip_meter13; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
 
@@ -997,7 +998,7 @@ object triplex_line {
 	phases BS; 
 	from trip_node14; 
 	to trip_meter14; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
 
@@ -1006,7 +1007,7 @@ object triplex_line {
 	phases CS; 
 	from trip_node15; 
 	to trip_meter15; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
 
@@ -1120,7 +1121,7 @@ object triplex_line {
     name "tpx_object_110";
 	from trip_node1; 
 	to tl_house_1; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
 
@@ -1129,7 +1130,7 @@ object triplex_line {
     name "tpx_object_111";
 	from trip_node2; 
 	to tl_house_2; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1138,7 +1139,7 @@ object triplex_line {
 	phases BS; 
 	from trip_node3; 
 	to tl_house_3; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1147,7 +1148,7 @@ object triplex_line {
 	phases CS; 
 	from trip_node4; 
 	to tl_house_4; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1156,7 +1157,7 @@ object triplex_line {
 	phases BS; 
 	from trip_node5; 
 	to tl_house_5; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1165,7 +1166,7 @@ object triplex_line {
 	phases CS; 
 	from trip_node6; 
 	to tl_house_6; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1174,7 +1175,7 @@ object triplex_line {
 	phases BS; 
 	from trip_node7; 
 	to tl_house_7; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1183,7 +1184,7 @@ object triplex_line {
 	phases CS; 
 	from trip_node8; 
 	to tl_house_8; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1192,7 +1193,7 @@ object triplex_line {
 	phases AS; 
 	from trip_node9; 
 	to tl_house_9; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1201,7 +1202,7 @@ object triplex_line {
 	phases AS; 
 	from trip_node10; 
 	to tl_house_10; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1210,7 +1211,7 @@ object triplex_line {
 	phases BS; 
 	from trip_node11; 
 	to tl_house_11; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1219,7 +1220,7 @@ object triplex_line {
 	phases CS; 
 	from trip_node12; 
 	to tl_house_12; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
 
@@ -1228,7 +1229,7 @@ object triplex_line {
 	phases AS; 
 	from trip_node13; 
 	to tl_house_13; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1237,7 +1238,7 @@ object triplex_line {
 	phases BS; 
 	from trip_node14; 
 	to tl_house_14; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1246,7 +1247,7 @@ object triplex_line {
 	phases CS; 
 	from trip_node15; 
 	to tl_house_15; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1255,7 +1256,7 @@ object triplex_line {
 	phases CS; 
 	from trip_node1; 
 	to tl_house_16; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
 
@@ -1264,7 +1265,7 @@ object triplex_line {
 	phases AS; 
 	from trip_node2; 
 	to tl_house_17; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1273,7 +1274,7 @@ object triplex_line {
 	phases BS; 
 	from trip_node3; 
 	to tl_house_18; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1282,7 +1283,7 @@ object triplex_line {
 	phases CS; 
 	from trip_node4; 
 	to tl_house_19; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1291,7 +1292,7 @@ object triplex_line {
 	phases BS; 
 	from trip_node5; 
 	to tl_house_20; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1300,7 +1301,7 @@ object triplex_line {
 	phases CS; 
 	from trip_node6; 
 	to tl_house_21; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1309,7 +1310,7 @@ object triplex_line {
 	phases BS; 
 	from trip_node7; 
 	to tl_house_22; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1318,7 +1319,7 @@ object triplex_line {
 	phases CS; 
 	from trip_node8; 
 	to tl_house_23; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1327,7 +1328,7 @@ object triplex_line {
 	phases AS; 
 	from trip_node9; 
 	to tl_house_24; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1336,7 +1337,7 @@ object triplex_line {
 	phases AS; 
 	from trip_node10; 
 	to tl_house_25; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1345,7 +1346,7 @@ object triplex_line {
 	phases BS; 
 	from trip_node11; 
 	to tl_house_26; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1354,7 +1355,7 @@ object triplex_line {
 	phases CS; 
 	from trip_node12; 
 	to tl_house_27; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
 
@@ -1363,7 +1364,7 @@ object triplex_line {
 	phases AS; 
 	from trip_node13; 
 	to tl_house_28; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1372,7 +1373,7 @@ object triplex_line {
 	phases BS; 
 	from trip_node14; 
 	to tl_house_29; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1381,7 +1382,7 @@ object triplex_line {
 	phases CS; 
 	from trip_node15; 
 	to tl_house_30; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1390,7 +1391,7 @@ object triplex_line {
 	phases CS; 
 	from trip_node1; 
 	to tl_house_31; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
 
@@ -1399,7 +1400,7 @@ object triplex_line {
 	phases AS; 
 	from trip_node2; 
 	to tl_house_32; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1408,7 +1409,7 @@ object triplex_line {
 	phases BS; 
 	from trip_node3; 
 	to tl_house_33; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1417,7 +1418,7 @@ object triplex_line {
 	phases CS; 
 	from trip_node4; 
 	to tl_house_34; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1426,7 +1427,7 @@ object triplex_line {
 	phases BS; 
 	from trip_node5; 
 	to tl_house_35; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1435,7 +1436,7 @@ object triplex_line {
 	phases CS; 
 	from trip_node6; 
 	to tl_house_36; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1444,7 +1445,7 @@ object triplex_line {
 	phases BS; 
 	from trip_node7; 
 	to tl_house_37; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1453,7 +1454,7 @@ object triplex_line {
 	phases CS; 
 	from trip_node8; 
 	to tl_house_38; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1462,7 +1463,7 @@ object triplex_line {
 	phases AS; 
 	from trip_node9; 
 	to tl_house_39; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -1471,7 +1472,7 @@ object triplex_line {
 	phases AS; 
 	from trip_node10; 
 	to tl_house_40; 
-	length 0; 
+	length 1; 
 	configuration triplex_line_configuration_1;
 }
  
@@ -2539,4 +2540,11 @@ object group_recorder {
   file IEEE-13_House_power.csv;
   interval 60;
   limit 10000;
+}
+
+object recorder {
+	parent Feeder;
+	property message_type;
+	file feeder.csv;
+	interval 1;
 }
