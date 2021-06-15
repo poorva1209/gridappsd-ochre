@@ -43,6 +43,7 @@ gld_helics_config = {
     "loglevel": 3,
     "broker": f"127.0.0.1:{port}",
     "coreType": "zmq",
+	"coreName": f"{simulation_id}_core",
     "period": 1.0,
     "uninterruptible": False,
     "publications": [],
@@ -192,7 +193,7 @@ if include_house:
         gld_helics_config['subscriptions'].append({
             'key': 'House_{}/load_to_feeder'.format(load),
             'type': 'complex',
-            'required': True,
+            'required': False,
             'info': '{{"object" : "{}", "property" : "constant_power_12"}}'.format(feeder_loads[load])
         })
 
