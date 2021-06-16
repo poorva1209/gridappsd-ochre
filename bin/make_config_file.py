@@ -194,7 +194,7 @@ if include_house:
             'key': 'House_{}/load_to_feeder'.format(load),
             'type': 'complex',
             'required': False,
-            'info': '{{"object" : "{}", "property" : "constant_power_12"}}'.format(feeder_loads[load])
+            'info': '{{"object" : "ld_{}_240v", "property" : "constant_power_12"}}'.format(feeder_loads[load])
         })
 
         if include_hems:
