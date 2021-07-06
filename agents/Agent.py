@@ -46,6 +46,7 @@ class Agent:
         self.actions = []
         self.setup_actions()
         self.results = {}
+        output_path = kwargs.get('output_path')
         self.print_log(kwargs.get('result_path'))
         self.result_path = kwargs.get(
             'result_path', os.path.join(output_path, self.name))

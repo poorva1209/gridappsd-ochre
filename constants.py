@@ -45,7 +45,7 @@ offset_save_results = timedelta(seconds=50)
 # Input/Output file paths
 base_path = os.path.abspath(os.path.join(os.path.dirname(__file__)))
 input_path = os.path.join(base_path, "inputs")
-output_path = os.path.join(base_path, "outputs", scenario_name)
+#output_path = os.path.join(base_path, "outputs", scenario_name)
 feeder_input_path = os.path.join(input_path, "opendss")
 doom_input_path = os.path.join(input_path, "house")
 foresee_input_path = os.path.join(input_path, "foresee")
@@ -64,9 +64,9 @@ print("MASTER DSS FILE:", master_dss_file)
 epw_weather_file_name = os.path.join(input_path, 'weather', 'sd_ca_nsrdb_2018.csv')
 
 # Output file locations
-house_results_path = os.path.join(output_path, 'Dwelling Model')
-hems_results_path = os.path.join(output_path, 'Foresee')
-feeder_results_path = os.path.join(output_path, 'Feeder')
+#house_results_path = os.path.join(output_path, 'Dwelling Model')
+#hems_results_path = os.path.join(output_path, 'Foresee')
+#feeder_results_path = os.path.join(output_path, 'Feeder')
 
 # processing master spreadsheet
 # UPDATED THE NAME OF MS once we have final version

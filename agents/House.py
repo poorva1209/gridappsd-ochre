@@ -16,7 +16,7 @@ HOUSE_DEFAULT_ARGS = {
 
     # Input and Output Files
     # 'input_path': doom_input_path,
-    'output_path': house_results_path,
+    #'output_path': house_results_path,
     'weather_file': epw_weather_file_name,
 
     # 'envelope_model_name': 'Env',
@@ -33,7 +33,7 @@ equipment = {
 }
 
 
-def update_house_args(house_id):
+def update_house_args(house_id, house_results_path):
     house_args = HOUSE_DEFAULT_ARGS
 
     # Load Master Spreadsheet and get house information
@@ -84,18 +84,18 @@ def update_house_args(house_id):
 class House(Agent):
     def __init__(self, house_id, **kwargs):
         self.house_id = house_id
-        print('_house_id')
-        print(self.house_id)
-
+        self.house_results_path = os.path.join(base_dir, 'outputs', 'Dwelling Model')
+        self.output_path = os.path.join(base_dir, 'outputs')
         self.hems_controls = None
         self.status = {}
         self.house = None
         self.gridappsd_simulation_id = kwargs.get('simulation_id',"Feeder")
-        kwargs['result_path'] = os.path.join(house_results_path, 'House_{}'.format(house_id)) 
+        kwargs['result_path'] = os.path.join(self.house_results_path, 'House_{}'.format(house_id)) 
+        kwargs['output_path'] = os.path.join(base_dir, 'outputs')
         super().__init__('House_' + house_id, **kwargs)
 
     def initialize(self):
-        house_args = update_house_args(self.house_id)
+        house_args = update_house_args(self.house_id, self.house_results_path)
         self.print_log(house_args)
         self.print_log(equipment)
         self.house = Dwelling(self.house_id, equipment, **house_args)
@@ -117,13 +117,12 @@ class House(Agent):
         # Note: order matters!
         # self.add_action(self.get_hems_controls, 'Get HEMS Controls', freq_hems, offset_hems_to_house)
         self.add_action(self.run_house, 'Run House', freq_house, offset_house_run)
-        # self.add_action(self.send_status_to_hems, 'Send House Status', freq_hems, offset_house_run)
+        # self.add_action(self.send_status_to_hems, 'Send House Status', freq_hems, offset_house_run)i
         self.add_action(self.save_results, 'Save Results', freq_save_results, offset_save_results)
 
     def get_voltage_from_feeder(self):
         voltage = self.fetch_subscription("Feeder")
         return 1 if voltage is None else (voltage[0] ** 2 + voltage[1] ** 2) ** 0.5 / 240.0   # convert voltage to p.u. values
-
     def send_powers_to_feeder(self, power_to_feeder):
         self.publish_to_topic("power", power_to_feeder)
 
@@ -166,18 +165,21 @@ class House(Agent):
 if __name__ == "__main__":
     import sys
 
-    if len(sys.argv) >= 4:
+    if len(sys.argv) >= 5:
         house_id = str(sys.argv[1])
         addr = str(sys.argv[2])
         gridappsd_sim_id = str(sys.argv[3])
-        agent = House(house_id, broker_addr=addr, fed_type='combo', simulation_id=gridappsd_sim_id)
-    if len(sys.argv) >= 3:
+        base_dir = str(sys.argv[4])
+        agent = House(house_id, broker_addr=addr, fed_type='combo', simulationid=gridappsd_sim_id, base_dir=base_dir)
+    elif len(sys.argv) >= 4:
         house_id = str(sys.argv[1])
         addr = str(sys.argv[2])
-        agent = House(house_id, broker_addr=addr, fed_type='combo')
-    elif len(sys.argv) == 2:
+        base_dir = str(sys.argv[3])
+        agent = House(house_id, broker_addr=addr, fed_type='combo', base_dir=base_dir)
+    elif len(sys.argv) == 3:
         house_id = str(sys.argv[1])
-        agent = House(house_id, debug=True, run_helics=False)
+        base_dir = str(sys.argv[2])
+        agent = House(house_id, debug=True, run_helics=False, base_dir=base_dir)
     else:
         raise Exception('Must specify House ID')
 

@@ -22,6 +22,7 @@ houses_per_broker = 60
 # Set paths 
 config_file = os.path.join(base_path, config_file_name)
 federates_directory = os.path.join(base_path, 'agents')
+output_path = os.path.join(base_path, "outputs")
 
 # config skeleton
 # Never start HELICS broker, it will be started by the GridAPPS-D platform
@@ -181,7 +182,7 @@ if include_house:
     for i, load in enumerate(house_ids):
         # add house and hems
         house = copy(federate)
-        house['exec'] = "python House.py {} {} simulation_id={}".format(load, ip_addr, simulation_id)
+        house['exec'] = "python House.py {} {} simulation_id={} {}".format(load, ip_addr, simulation_id, base_path)
         house['name'] = "House_{}".format(load)
         config['federates'].append(house)
         gld_helics_config['publications'].append({
@@ -210,6 +211,9 @@ if include_house:
 if os.path.isdir(output_path):
     shutil.rmtree(output_path)
 os.makedirs(output_path, exist_ok=True)
+house_results_path = os.path.join(output_path, 'Dwelling Model')
+hems_results_path = os.path.join(output_path, 'Foresee')
+feeder_results_path = os.path.join(output_path, 'Feeder')
 os.makedirs(hems_results_path, exist_ok=True)
 os.makedirs(house_results_path, exist_ok=True)
 os.makedirs(feeder_results_path, exist_ok=True)
