@@ -182,7 +182,7 @@ if include_house:
     for i, load in enumerate(house_ids):
         # add house and hems
         house = copy(federate)
-        house['exec'] = "python House.py {} {} simulation_id={} {}".format(load, ip_addr, simulation_id, base_path)
+        house['exec'] = "python House.py {} {} {} {}".format(load, ip_addr, simulation_id, base_path)
         house['name'] = "House_{}".format(load)
         config['federates'].append(house)
         gld_helics_config['publications'].append({
