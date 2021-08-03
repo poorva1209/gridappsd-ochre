@@ -68,10 +68,5 @@ epw_weather_file_name = os.path.join(input_path, 'weather', 'sd_ca_nsrdb_2018.cs
 #hems_results_path = os.path.join(output_path, 'Foresee')
 #feeder_results_path = os.path.join(output_path, 'Feeder')
 
-# processing master spreadsheet
-# UPDATED THE NAME OF MS once we have final version
-ms_file = os.path.join(input_path, "MS", "Main_spreadsheet_test40_original.xlsx")
-master_df = pd.read_excel(ms_file, index_col='House_ID')[:no_of_homes]
-house_ids = master_df.index.to_list()
-feeder_loads = dict(zip(house_ids, master_df['Load_name']))
-print(house_ids)
+ms_file_map = {"_13AD8E07-3BF9-A4E2-CB8F-C3722F837B62":"inputs/MS/Main_spreadsheet_test40_original.xlsx",
+               "_5DB4FA23-623B-4DBE-BA59-B99ECF44DABA":"inputs/MS/Main_spreadsheet_FASTDERMS.xlsx"}

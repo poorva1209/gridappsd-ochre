@@ -16,6 +16,7 @@ base_path = sys.argv[2]
 config_file_name = sys.argv[3]
 port = sys.argv[4]
 simulation_id = sys.argv[5]
+model_id = sys.argv[6]
 
 houses_per_broker = 60
 
@@ -65,6 +66,15 @@ gld_helics_config = {
         }
     ]
 }
+
+# processing master spreadsheet
+# UPDATED THE NAME OF MS once we have final version
+#ms_file = os.path.join(input_path, "MS", "Main_spreadsheet_test40_original.xlsx")
+ms_file = os.path.join(base_path, ms_file_map.get(model_id, None))
+master_df = pd.read_excel(ms_file, index_col='House_ID')[:no_of_homes]
+house_ids = master_df.index.to_list()
+feeder_loads = dict(zip(house_ids, master_df['Load_name']))
+print(house_ids)
 
 
 # List the nodes allocated on job for ssh
